@@ -1,38 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("themeToggle");
+    const body = document.body;
 
-    console.log("JS cargado correctamente");
-
-    const proyectos = [
-        {
-            nombre: "DavanteDent",
-            descripcion: "Aplicación web para la gestión de citas de una clínica dental. Permite crear, modificar y eliminar citas usando LocalStorage.",
-            enlace: "proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/"
-        }
-    ];
-
-    const contenedor = document.getElementById("listaProyectos");
-
-    if (!contenedor) {
-        console.error("NO se encontró #listaProyectos");
-        return;
+    // Cargar preferencia guardada
+    const theme = localStorage.getItem("theme");
+    if (theme === "light") {
+        body.classList.add("light-mode");
+        toggleBtn.textContent = "☀️ Light";
     }
 
-    proyectos.forEach(proyecto => {
-        const card = document.createElement("div");
-        card.classList.add("project-card");
+    toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("light-mode");
 
-        card.innerHTML = `
-            <h3>${proyecto.nombre}</h3>
-            <p>${proyecto.descripcion}</p>
-            <a href="${proyecto.enlace}" 
-               target="_blank" 
-               class="btn btn-project">
-               Ver proyecto
-            </a>
-        `;
-
-        contenedor.appendChild(card);
+        if (body.classList.contains("light-mode")) {
+            localStorage.setItem("theme", "light");
+            toggleBtn.textContent = "☀️ Light";
+        } else {
+            localStorage.setItem("theme", "dark");
+            toggleBtn.textContent = "🌙 Dark";
+        }
     });
-
 });
-
