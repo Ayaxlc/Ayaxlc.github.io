@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DavanteDent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="inicio" class="pantalla-activa">
+    <h1 class="logo">DavanteDent</h1>
+
+    <div class="botones-inicio">
+        <button id="btnNuevaCita">Crear cita</button>
+        <button id="btnVerCitas">Ver lista de citas</button>
+    </div>
+</section>
+
+<section id="seccionFormulario" class="pantalla-oculta">
+    <h2>Nueva cita</h2>
+
+    <form id="formCitas">
+        <input type="text" id="nombrePaciente" placeholder="Nombre" required>
+        <input type="text" id="apellidosPaciente" placeholder="Apellidos" required>
+        <input type="date" id="fechaNacimiento" required>
+        <input type="text" id="identificacion" placeholder="ID del paciente" required>
+        <input type="tel" id="telefonoContacto" placeholder="Teléfono" required>
+
+        <div class="fila">
+            <input type="number" id="diaCita" placeholder="Día" min="1" max="31" required>
+            <input type="number" id="mesCita" placeholder="Mes" min="1" max="12" required>
+            <input type="number" id="anioCita" placeholder="Año" min="2024" required>
+        </div>
+
+        <div class="fila">
+            <input type="number" id="horaCita" placeholder="Hora" min="0" max="23" required>
+            <input type="number" id="minutosCita" placeholder="Minutos" min="0" max="59" required>
+        </div>
+
+        <textarea id="observaciones" placeholder="Observaciones"></textarea>
+
+        <button type="submit">Guardar cita</button>
+    </form>
+
+    <button class="volver">Volver al inicio</button>
+</section>
+
+<section id="seccionCitas" class="pantalla-oculta">
+    <h2>Citas registradas</h2>
+    <div id="panelCitas"></div>
+    <button class="volver">Volver al inicio</button>
+</section>
+
+<footer>
+    Clínica DavanteDent · Tel: 900 123 456 · Madrid
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
