@@ -7,69 +7,68 @@
 </head>
 <body>
 
-<!-- CABECERA -->
-<header>
+<!-- ===== HEADER ===== -->
+<header class="hero">
     <h1>Ayax López</h1>
-    <p>Estudiante de Desarrollo de Aplicaciones Web (DAW)</p>
+    <p>Estudiante de Desarrollo de Aplicaciones Web</p>
 
-    <!-- BOTONES SUPERIORES (SENCILLOS, COMO GITHUB) -->
-    <div class="top-links">
-        <a href="#proyectos">Proyectos</a>
-        <a href="mailto:tuemail@email.com">Contacto</a>
-        <a href="https://www.linkedin.com/in/TU-LINKEDIN" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Ayaxlc" target="_blank" class="github-btn">GitHub</a>
+    <div class="hero-buttons">
+        <a href="#proyectos" class="btn">Proyectos</a>
+        <a href="mailto:ayax.lopezcamps@gmail.com" class="btn">Contacto</a>
+        <a href="https://www.linkedin.com/" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://github.com/Ayaxlc" target="_blank" class="btn btn-github">GitHub</a>
     </div>
 </header>
 
-<!-- SOBRE MÍ -->
-<section>
+<!-- ===== SOBRE MÍ ===== -->
+<section class="container">
     <h2>Sobre mí</h2>
     <p>
-        Estoy cursando el Grado Superior de Desarrollo de Aplicaciones Web.
-        Este portfolio recoge mis proyectos prácticos desarrollados con
-        HTML, CSS y JavaScript, aplicando los conceptos aprendidos en clase.
+        Actualmente,Soy Administrador de Sistemas y estoy complementando mi perfil con formación en programación. Creo que en el mundo de la tecnología la evolución constante es una necesidad, por eso mantengo un compromiso con seguir aprendiendo y mejorando cada día.Estoy orientando mi carrera hacia el área de DevOps, con el objetivo de especializarme en la automatización de procesos, la implementación de pipelines CI/CD y la gestión de entornos cloud.
+        Este portfolio recoge mis proyectos prácticos.
     </p>
 </section>
 
-<!-- PROYECTOS -->
-<section id="proyectos">
+<!-- ===== PROYECTOS ===== -->
+<section class="container" id="proyectos">
     <h2>Proyectos</h2>
 
-    <div class="card">
+    <div class="project-card">
         <h3>DavanteDent</h3>
         <p>
             Aplicación web para la gestión de citas de una clínica dental.
             Permite crear, modificar y eliminar citas usando LocalStorage.
         </p>
-
-        <a href="proyectos/davantedent/" target="_blank" class="btn">
+        <a href="proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/" 
+           target="_blank" class="btn btn-project">
             Ver proyecto
         </a>
     </div>
+
+    <!-- AQUÍ AÑADIRÁS MÁS PROYECTOS -->
 </section>
 
-<!-- EXPERIENCIA LABORAL -->
-<section>
+<!-- ===== EXPERIENCIA LABORAL ===== -->
+<section class="container">
     <h2>Experiencia Laboral</h2>
 
-    <div class="card">
+    <div class="project-card">
         <p>
-            Experiencia profesional como Técnico y Administrador de Sistemas,
-            trabajando con entornos Microsoft, automatización y soporte TI.
+            Experiencia como Técnico y Administrador de Sistemas en entornos
+            Microsoft, automatización con PowerShell y Power Automate.
         </p>
 
-        <!-- BOTÓN EXACTAMENTE COMO VER PROYECTO -->
-        <a href="cv/index.html" class="btn">
+        <a href="cv.html" class="btn btn-project">
             Ver CV
         </a>
     </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ===== FOOTER ===== -->
 <footer>
-    <p>© 2025 · Ayax López</p>
+    © 2025 · Ayax López
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
