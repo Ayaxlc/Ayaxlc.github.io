@@ -1,23 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggleBtn = document.getElementById("themeToggle");
-    const body = document.body;
+    const toggleBtn = document.getElementById("toggleTheme");
 
-    // Cargar preferencia guardada
-    const theme = localStorage.getItem("theme");
-    if (theme === "light") {
-        body.classList.add("light-mode");
+    // Cargar preferencia
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
         toggleBtn.textContent = "☀️ Light";
     }
 
     toggleBtn.addEventListener("click", () => {
-        body.classList.toggle("light-mode");
+        document.body.classList.toggle("dark");
 
-        if (body.classList.contains("light-mode")) {
-            localStorage.setItem("theme", "light");
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
             toggleBtn.textContent = "☀️ Light";
         } else {
-            localStorage.setItem("theme", "dark");
+            localStorage.setItem("theme", "light");
             toggleBtn.textContent = "🌙 Dark";
         }
+    });
+
+    // Certificaciones
+    document.querySelectorAll(".btn-credential").forEach(btn => {
+        btn.addEventListener("click", () => {
+            window.open(btn.dataset.url, "_blank");
+        });
     });
 });
