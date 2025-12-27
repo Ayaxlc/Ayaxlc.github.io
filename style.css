@@ -21,14 +21,16 @@ body {
     flex-wrap: wrap;
 }
 
-/* BOTONES */
+/* BOTONES GENERALES */
 .btn {
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 6px;
-    background-color: #24292e;
+    background-color: #24292e; /* gris GitHub */
     color: white;
     font-weight: 600;
+    cursor: pointer;
+    border: none;
     transition: background-color 0.25s ease;
 }
 
@@ -36,15 +38,28 @@ body {
     background-color: #000;
 }
 
-.btn-project {
+/* BOTONES DE PROYECTO / CV */
+.btn-project,
+.btn-proyecto {
     background-color: #005bbb;
 }
 
-.btn-project:hover {
+.btn-project:hover,
+.btn-proyecto:hover {
     background-color: #003f80;
 }
 
-/* CONTENEDOR */
+/* BOTÓN CREDENCIAL */
+.btn-credential {
+    background-color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.btn-credential:hover {
+    background-color: #495057;
+}
+
+/* CONTENEDORES */
 .container {
     max-width: 900px;
     margin: 60px auto;
@@ -55,12 +70,37 @@ h2 {
     color: #005bbb;
 }
 
-/* TARJETAS */
-.project-card {
+/* TARJETAS (HTML + JS) */
+.project-card,
+.proyecto-card {
     background-color: white;
     padding: 25px;
     border-radius: 8px;
     margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* PROYECTOS */
+.botones-proyecto {
+    margin-top: 15px;
+}
+
+/* CERTIFICACIONES */
+.cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* LISTAS */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
 }
 
 /* FOOTER */
@@ -69,5 +109,5 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 80px;
+    font-size: 0.9rem;
 }
-
