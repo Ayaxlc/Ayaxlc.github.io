@@ -1,45 +1,37 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f6f8;
+    background-color: #f4f6f8;
     color: #333;
 }
 
-/* HERO */
-.hero {
-    background: #005bbb;
+/* CABECERA */
+header {
+    background-color: #005bbb;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
-.hero-buttons {
-    margin-top: 25px;
+.top-links {
+    margin-top: 15px;
 }
 
-/* BOTONES */
-.btn {
-    display: inline-block;
-    margin: 6px;
-    padding: 10px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
+.top-links a {
+    margin: 0 8px;
     color: white;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.btn-projects { background: #ff9800; }
-.btn-contact { background: #4caf50; }
-.btn-linkedin { background: #0a66c2; }
-.btn-github { background: #24292e; }
-.btn-cv { background: #9c27b0; }
-
-.btn:hover {
-    opacity: 0.85;
+.github-btn {
+    background-color: #24292e;
+    padding: 6px 12px;
+    border-radius: 6px;
 }
 
 /* SECCIONES */
-.section {
+section {
     max-width: 900px;
     margin: 50px auto;
     padding: 0 20px;
@@ -49,8 +41,8 @@ h2 {
     color: #005bbb;
 }
 
-/* PROYECTOS */
-.project-card {
+/* TARJETAS (PROYECTOS / EXPERIENCIA) */
+.card {
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -58,8 +50,25 @@ h2 {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* BOTÓN REUTILIZABLE */
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 15px;
+    background-color: #005bbb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #003f80;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
-    background: #e1e1e1;
     padding: 20px;
+    background-color: #e1e1e1;
+    margin-top: 60px;
 }
