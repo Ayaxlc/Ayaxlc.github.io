@@ -1,74 +1,134 @@
+/* 
+========================================
+ESTILOS GENERALES DE LA PÁGINA
+========================================
+*/
+
+/* 
+Estilos generales del cuerpo de la página.
+Afectan a toda la web.
+*/
 body {
+    /* Tipo de letra principal */
     font-family: Arial, sans-serif;
+
+    /* Color de fondo azul claro */
     background-color: #eef4ff;
+
+    /* Quitamos márgenes por defecto del navegador */
     margin: 0;
+
+    /* Centramos el texto por defecto */
     text-align: center;
 }
 
+/* 
+Cada sección de la página tiene espacio interior
+para que el contenido no quede pegado
+*/
 section {
     padding: 50px 20px;
 }
 
+/* 
+Logo principal de la aplicación (DavanteDent)
+*/
 .logo {
-    font-size: 3em;
-    color: #005bbb;
-    margin-bottom: 50px;
+    font-size: 3em;           /* Tamaño grande del texto */
+    color: #005bbb;           /* Azul corporativo */
+    margin-bottom: 50px;      /* Espacio debajo del logo */
 }
 
+/* 
+Estilo general de TODOS los botones
+*/
 button {
-    background-color: #005bbb;
-    color: white;
-    border: none;
-    padding: 12px 18px;
+    background-color: #005bbb; /* Color azul */
+    color: white;              /* Texto blanco */
+    border: none;              /* Sin borde */
+    padding: 12px 18px;        /* Tamaño del botón */
     margin: 5px;
-    border-radius: 6px;
-    cursor: pointer;
+    border-radius: 6px;        /* Bordes redondeados */
+    cursor: pointer;           /* Manita al pasar el ratón */
 }
 
+/* 
+Efecto al pasar el ratón por encima de un botón
+*/
 button:hover {
     background-color: #003f80;
 }
 
+/* 
+Botón específico para eliminar citas
+(se diferencia del resto)
+*/
 .btn-eliminar {
-    background-color: #c0392b;
+    background-color: #c0392b; /* Rojo */
 }
 
+/* 
+Efecto hover del botón eliminar
+*/
 .btn-eliminar:hover {
     background-color: #922b21;
 }
 
+/* 
+Formulario de creación de citas
+*/
 form {
-    max-width: 420px;
-    margin: auto;
+    max-width: 420px; /* Ancho máximo */
+    margin: auto;     /* Lo centra horizontalmente */
 }
 
-input, textarea {
-    width: 100%;
+/* 
+Campos de texto y área de observaciones
+*/
+input,
+textarea {
+    width: 100%;        /* Ocupan todo el ancho */
     padding: 10px;
     margin: 6px 0;
 }
 
+/* 
+Fila para agrupar inputs (día, mes, año / hora, minutos)
+*/
 .fila {
     display: flex;
     gap: 6px;
 }
 
+/* 
+Tabla donde se muestran las citas
+*/
 table {
-    margin: auto;
+    margin: auto;               /* Centrada */
     width: 85%;
-    border-collapse: collapse;
+    border-collapse: collapse;  /* Bordes unidos */
 }
 
-th, td {
+/* 
+Celdas de la tabla
+*/
+th,
+td {
     border: 1px solid #ccc;
     padding: 10px;
 }
 
+/* 
+Cabecera de la tabla
+*/
 th {
     background-color: #005bbb;
     color: white;
 }
 
+/* 
+Pie de página de la aplicación
+*/
 footer {
     background-color: #005bbb;
     color: white;
@@ -76,5 +136,15 @@ footer {
     margin-top: 40px;
 }
 
-.pantalla-activa { display: block; }
-.pantalla-oculta { display: none; }
+/* 
+Clases para mostrar u ocultar pantallas
+(controladas desde JavaScript)
+*/
+.pantalla-activa {
+    display: block;
+}
+
+.pantalla-oculta {
+    display: none;
+}
+
