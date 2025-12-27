@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4ff;
+    margin: 0;
+    text-align: center;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.logo {
+    font-size: 3em;
+    color: #005bbb;
+    margin-bottom: 50px;
+}
+
+button {
+    background-color: #005bbb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003f80;
+}
+
+.btn-eliminar {
+    background-color: #c0392b;
+}
+
+.btn-eliminar:hover {
+    background-color: #922b21;
+}
+
+form {
+    max-width: 420px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+}
+
+.fila {
+    display: flex;
+    gap: 6px;
+}
+
+table {
+    margin: auto;
+    width: 85%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #005bbb;
+    color: white;
+}
+
+footer {
+    background-color: #005bbb;
+    color: white;
+    padding: 12px;
+    margin-top: 40px;
+}
+
+.pantalla-activa { display: block; }
+.pantalla-oculta { display: none; }
