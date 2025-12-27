@@ -2,87 +2,106 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio · Ayax López Camps</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- HERO -->
 <header class="hero">
     <h1>Ayax López Camps</h1>
-    <p>Administrador de sistemas | Desarrollador web</p>
+    <p>Administrador de Sistemas | Desarrollador Web</p>
 
     <div class="hero-buttons">
         <a href="#proyectos" class="btn">Proyectos</a>
         <a href="mailto:ayax.lopezcamps@gmail.com" class="btn">Contacto</a>
         <a href="https://www.linkedin.com/" target="_blank" class="btn">LinkedIn</a>
         <a href="https://github.com/Ayaxlc" target="_blank" class="btn">GitHub</a>
+        <button id="themeToggle" class="btn">🌙 Dark</button>
     </div>
 </header>
 
+<!-- SOBRE MI -->
 <section class="container">
     <h2>Sobre mí</h2>
     <p>
-        Actualmente soy Administrador de Sistemas y estoy complementando mi perfil
-        con formación en programación. Mi objetivo es evolucionar hacia perfiles
-        de automatización, DevOps y desarrollo web.
+        Administrador de Sistemas con experiencia en entornos Microsoft,
+        automatización y gestión IT. Actualmente complemento mi perfil
+        con formación en Desarrollo de Aplicaciones Web, orientado a
+        automatización, DevOps y desarrollo frontend.
     </p>
 </section>
 
-<!-- ================= PROYECTOS ================= -->
+<!-- PROYECTOS -->
 <section class="container" id="proyectos">
     <h2>Proyectos</h2>
 
-    <!-- ESTE CONTENEDOR ES CLAVE -->
-    <div id="listaProyectos"></div>
+    <div class="project-card">
+        <h3>DavanteDent</h3>
+        <p>
+            Aplicación web para la gestión de citas de una clínica dental.
+            Permite crear, modificar y eliminar citas usando LocalStorage.
+        </p>
+        <a 
+            href="proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/" 
+            class="btn btn-project" 
+            target="_blank">
+            Ver proyecto
+        </a>
+    </div>
 </section>
 
-
-<!-- ================= EXPERIENCIA ================= -->
+<!-- EXPERIENCIA LABORAL -->
 <section class="container">
     <h2>Experiencia Laboral</h2>
 
-    <a href="cv.html" class="btn btn-project">Ver CV</a>
+    <div class="project-card">
+        <p><strong>ASITUR</strong></p>
+        <p>
+            Técnico y Administrador de Sistemas. Gestión de entornos Microsoft,
+            soporte avanzado, automatización con PowerShell y Power Automate,
+            mantenimiento de infraestructura y mejora de procesos IT.
+        </p>
+        <a href="cv.html" class="btn btn-project">Ver CV</a>
+    </div>
 </section>
 
-<!-- ================= CERTIFICACIONES ================= -->
+<!-- CERTIFICACIONES -->
 <section class="container">
     <h2>Certificaciones</h2>
 
     <div class="project-card cert-item">
-        <span>CISCO - Introducción a la ciberseguridad</span>
-        <a 
-            href="https://www.credly.com/badges/27a3d38d-6c54-45e3-a249-87b188807283"
-            target="_blank"
-            class="btn btn-project"
-        >
+        <span><strong>CISCO</strong> – Introducción a la ciberseguridad</span>
+        <button 
+            class="btn btn-credential"
+            data-url="https://www.credly.com/badges/27a3d38d-6c54-45e3-a249-87b188807283">
             ID credencial
-        </a>
+        </button>
     </div>
 
     <div class="project-card cert-item">
-        <span>Scrum Fundamentals Certified (SFC™)</span>
-        <a 
-            href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1135320"
-            target="_blank"
-            class="btn btn-project"
-        >
+        <span><strong>ScrumStudy</strong> – Scrum Fundamentals Certified (SFC™)</span>
+        <button 
+            class="btn btn-credential"
+            data-url="https://www.scrumstudy.com/certification/verify?type=SFC&number=1135320">
             ID credencial
-        </a>
+        </button>
     </div>
 </section>
 
-<!-- ================= FORMACION ================= -->
+<!-- FORMACION -->
 <section class="container">
     <h2>Formación</h2>
     <div class="project-card">
         <ul>
-            <li>Grado Superior Desarrollo de Aplicaciones Web</li>
-            <li>Grado Medio Sistemas Microinformáticos y Redes</li>
+            <li>Grado Superior en Desarrollo de Aplicaciones Web</li>
+            <li>Grado Medio en Sistemas Microinformáticos y Redes</li>
         </ul>
     </div>
 </section>
 
-<!-- ================= IDIOMAS ================= -->
+<!-- IDIOMAS -->
 <section class="container">
     <h2>Idiomas</h2>
     <div class="project-card">
@@ -93,6 +112,7 @@
     </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
     © 2025 · Ayax López Camps
 </footer>
