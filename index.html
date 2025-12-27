@@ -1,7 +1,7 @@
 <!--
 MI PORTFOLIO PERSONAL
-Página principal del GitHub Pages.
-Desde aquí se muestran mis proyectos y mi perfil como desarrollador.
+Página principal de GitHub Pages
+Desde aquí se accede a todos mis proyectos
 -->
 
 <!DOCTYPE html>
@@ -9,82 +9,39 @@ Desde aquí se muestran mis proyectos y mi perfil como desarrollador.
 <head>
     <meta charset="UTF-8">
     <title>Portfolio · Ayax López</title>
-
-    <!-- Meta para responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Enlace al CSS principal -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- =========================
-         PRESENTACIÓN
-    ========================== -->
-    <header class="hero">
-        <h1>Ayax López</h1>
-        <p>Estudiante de Desarrollo de Aplicaciones Web (DAW)</p>
+<header>
+    <h1>Ayax López</h1>
+    <p>Estudiante de Desarrollo de Aplicaciones Web (DAW)</p>
+</header>
 
-        <div class="hero-botones">
-            <a href="#proyectos" class="btn">Ver proyectos</a>
-            <a href="https://github.com/Ayaxlc" target="_blank" class="btn secundario">
-                GitHub
-            </a>
-        </div>
-    </header>
+<section>
+    <h2>Sobre mí</h2>
+    <p>
+        Estoy cursando el Grado Superior de Desarrollo de Aplicaciones Web.
+        Este portfolio muestra mis proyectos prácticos realizados con
+        HTML, CSS y JavaScript.
+    </p>
+</section>
 
-    <!-- =========================
-         SOBRE MÍ
-    ========================== -->
-    <section class="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>
-            Actualmente estudio el Grado Superior de Desarrollo de Aplicaciones Web.
-            Estoy aprendiendo a crear aplicaciones web usando HTML, CSS y JavaScript,
-            centrándome en proyectos prácticos para entender bien cómo funciona
-            el desarrollo frontend.
-        </p>
-    </section>
+<section>
+    <h2>Proyectos</h2>
 
-    <!-- =========================
-         PROYECTOS
-         (Aquí JS añadirá contenido)
-    ========================== -->
-    <section id="proyectos" class="proyectos">
-        <h2>Proyectos</h2>
+    <!-- Aquí JavaScript cargará los proyectos -->
+    <div id="listaProyectos" class="lista-proyectos"></div>
+</section>
 
-        <!-- Contenedor donde JavaScript insertará las cards -->
-        <div id="listaProyectos" class="lista-proyectos">
-            <!-- JS genera los proyectos aquí -->
-        </div>
-    </section>
+<footer>
+    <p>© 2025 · Ayax López</p>
+    <p>
+        <a href="https://github.com/Ayaxlc" target="_blank">GitHub</a>
+    </p>
+</footer>
 
-    <!-- =========================
-         SKILLS
-    ========================== -->
-    <section class="skills">
-        <h2>Tecnologías</h2>
-
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript (ES6)</li>
-            <li>Git y GitHub</li>
-            <li>DAW · Desarrollo Web</li>
-        </ul>
-    </section>
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer>
-        <p>© 2025 · Ayax López</p>
-        <p>
-            <a href="https://github.com/Ayaxlc" target="_blank">GitHub</a>
-        </p>
-    </footer>
-
-    <!-- JavaScript principal -->
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
+
