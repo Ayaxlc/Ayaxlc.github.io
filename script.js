@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    console.log("JS cargado correctamente");
+
     const proyectos = [
         {
             nombre: "DavanteDent",
@@ -10,30 +12,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const contenedor = document.getElementById("listaProyectos");
 
-    if (!contenedor) return;
+    if (!contenedor) {
+        console.error("NO se encontró #listaProyectos");
+        return;
+    }
 
-    proyectos.forEach(p => {
+    proyectos.forEach(proyecto => {
         const card = document.createElement("div");
-        card.className = "project-card";
+        card.classList.add("project-card");
 
         card.innerHTML = `
-            <h3>${p.nombre}</h3>
-            <p>${p.descripcion}</p>
-            <a href="${p.enlace}" target="_blank" class="btn btn-project">
-                Ver proyecto
+            <h3>${proyecto.nombre}</h3>
+            <p>${proyecto.descripcion}</p>
+            <a href="${proyecto.enlace}" 
+               target="_blank" 
+               class="btn btn-project">
+               Ver proyecto
             </a>
         `;
 
         contenedor.appendChild(card);
     });
 
-    /* Scroll suave */
-    document.querySelectorAll('a[href^="#"]').forEach(enlace => {
-        enlace.addEventListener("click", function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute("href"))
-                .scrollIntoView({ behavior: "smooth" });
-        });
-    });
-
 });
+
