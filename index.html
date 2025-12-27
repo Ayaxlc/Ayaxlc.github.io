@@ -8,7 +8,6 @@
 <body>
 
 <header class="hero">
-
     <h1>Ayax López Camps</h1>
     <p>Administrador de sistemas | Desarrollador web</p>
 
@@ -17,23 +16,22 @@
         <a href="mailto:ayax.lopezcamps@gmail.com" class="btn">Contacto</a>
         <a href="https://www.linkedin.com/" target="_blank" class="btn">LinkedIn</a>
         <a href="https://github.com/Ayaxlc" target="_blank" class="btn">GitHub</a>
+    </div>
 
-        <!-- BOTÓN DARK MODE -->
-    <div class="theme-toggle">
-    <span>🌞</span>
-    <label class="switch">
-        <input type="checkbox" id="themeToggle">
-        <span class="slider"></span>
-    </label>
-    <span>🌙</span>
-</div>
-
+    <!-- BOTÓN DARK MODE (ESTILO SWITCH) -->
+    <div class="dark-toggle">
+        <span>Modo oscuro</span>
+        <label class="switch">
+            <input type="checkbox" id="darkSwitch">
+            <span class="slider"></span>
+        </label>
+    </div>
 </header>
 
 <section class="container">
     <h2>Sobre mí</h2>
     <p>
-         Actualmente soy Administrador de Sistemas y estoy complementando mi perfil
+        Actualmente soy Administrador de Sistemas y estoy complementando mi perfil
         con formación en programación. Mi objetivo es evolucionar hacia perfiles
         de automatización, DevOps y desarrollo web.
     </p>
@@ -48,7 +46,7 @@
             Aplicación web para la gestión de citas de una clínica dental.
             Permite crear, modificar y eliminar citas usando LocalStorage.
         </p>
-        <a href="proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/"
+        <a href="proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/" 
            class="btn btn-project" target="_blank">
             Ver proyecto
         </a>
@@ -57,30 +55,29 @@
 
 <section class="container">
     <h2>Experiencia Laboral</h2>
+    <p>
+   Técnico y Administrador de Sistemas. Gestión de entornos Microsoft, soporte avanzado y automatización de tareas.
+    </p>
 
-    <div class="project-card">
-        <p>
-            Técnico y Administrador de Sistemas. Gestión de entornos Microsoft,
-            soporte avanzado y automatización de tareas.
-        </p>
-        <a href="cv.html" class="btn btn-project">Ver CV</a>
-    </div>
+    <a href="cv.html" class="btn btn-project">Ver CV</a>
 </section>
 
 <section class="container">
     <h2>Certificaciones</h2>
 
     <div class="project-card cert-item">
-        <span>CISCO – Introducción a la ciberseguridad</span>
-        <button class="btn btn-credential"
+        <span><strong>CISCO</strong> – Introducción a la ciberseguridad</span>
+        <button 
+            class="btn btn-credential"
             data-url="https://www.credly.com/badges/27a3d38d-6c54-45e3-a249-87b188807283">
             ID credencial
         </button>
     </div>
 
     <div class="project-card cert-item">
-        <span>Scrum Fundamentals Certified (SFC™)</span>
-        <button class="btn btn-credential"
+        <span><strong>ScrumStudy</strong> – Scrum Fundamentals Certified (SFC™)</span>
+        <button 
+            class="btn btn-credential"
             data-url="https://www.scrumstudy.com/certification/verify?type=SFC&number=1135320">
             ID credencial
         </button>
@@ -108,9 +105,10 @@
 </section>
 
 <footer>
-    © 2025 · Ayax López
+    © 2025 · Ayax López Camps
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
+
