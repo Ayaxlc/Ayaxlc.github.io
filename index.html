@@ -1,7 +1,7 @@
 <!--
 MI PORTFOLIO PERSONAL
-Este archivo es la página principal del GitHub Pages.
-Desde aquí se accede a todos los proyectos.
+Página principal del GitHub Pages.
+Desde aquí se muestran mis proyectos y mi perfil como desarrollador.
 -->
 
 <!DOCTYPE html>
@@ -10,53 +10,81 @@ Desde aquí se accede a todos los proyectos.
     <meta charset="UTF-8">
     <title>Portfolio · Ayax López</title>
 
-    <!-- Enlazamos el CSS del portfolio -->
+    <!-- Meta para responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlace al CSS principal -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- CABECERA PRINCIPAL -->
-    <header>
+    <!-- =========================
+         PRESENTACIÓN
+    ========================== -->
+    <header class="hero">
         <h1>Ayax López</h1>
         <p>Estudiante de Desarrollo de Aplicaciones Web (DAW)</p>
+
+        <div class="hero-botones">
+            <a href="#proyectos" class="btn">Ver proyectos</a>
+            <a href="https://github.com/Ayaxlc" target="_blank" class="btn secundario">
+                GitHub
+            </a>
+        </div>
     </header>
 
-    <!-- SECCIÓN SOBRE MÍ -->
-    <section>
+    <!-- =========================
+         SOBRE MÍ
+    ========================== -->
+    <section class="sobre-mi">
         <h2>Sobre mí</h2>
         <p>
-            Actualmente estoy cursando el Grado Superior de Desarrollo de
-            Aplicaciones Web. Me estoy formando en HTML, CSS y JavaScript,
-            creando proyectos prácticos para aprender el desarrollo web
-            desde cero.
+            Actualmente estudio el Grado Superior de Desarrollo de Aplicaciones Web.
+            Estoy aprendiendo a crear aplicaciones web usando HTML, CSS y JavaScript,
+            centrándome en proyectos prácticos para entender bien cómo funciona
+            el desarrollo frontend.
         </p>
     </section>
 
-    <!-- SECCIÓN PROYECTOS -->
-    <section>
+    <!-- =========================
+         PROYECTOS
+         (Aquí JS añadirá contenido)
+    ========================== -->
+    <section id="proyectos" class="proyectos">
         <h2>Proyectos</h2>
 
-        <div class="proyecto">
-            <h3>DavanteDent</h3>
-            <p>
-                Aplicación web para la gestión de citas de una clínica dental.
-                Permite crear, modificar y eliminar citas, almacenando los
-                datos en LocalStorage.
-            </p>
-
-            <a href="proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/" target="_blank">
-                Ver proyecto
-            </a>
+        <!-- Contenedor donde JavaScript insertará las cards -->
+        <div id="listaProyectos" class="lista-proyectos">
+            <!-- JS genera los proyectos aquí -->
         </div>
     </section>
 
-    <!-- PIE DE PÁGINA -->
+    <!-- =========================
+         SKILLS
+    ========================== -->
+    <section class="skills">
+        <h2>Tecnologías</h2>
+
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6)</li>
+            <li>Git y GitHub</li>
+            <li>DAW · Desarrollo Web</li>
+        </ul>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
     <footer>
-        <p>© 2025 · Portfolio de Ayax López</p>
+        <p>© 2025 · Ayax López</p>
         <p>
             <a href="https://github.com/Ayaxlc" target="_blank">GitHub</a>
         </p>
     </footer>
-<script src="script.js"></script>
+
+    <!-- JavaScript principal -->
+    <script src="script.js"></script>
 </body>
 </html>
