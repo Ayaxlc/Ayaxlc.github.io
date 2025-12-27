@@ -1,20 +1,37 @@
+/* RESET BÁSICO */
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+    background-color: #0d1117; /* fondo oscuro tipo GitHub */
+    color: #c9d1d9;
 }
 
 /* HERO */
 .hero {
-    background-color: #005bbb;
+    background: linear-gradient(135deg, #0a58ca, #003f80);
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
+.hero h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* BOTONES HERO */
 .hero-buttons {
-    margin-top: 25px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     gap: 12px;
@@ -24,65 +41,58 @@ body {
 /* BOTONES GENERALES */
 .btn {
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 10px 20px;
     border-radius: 6px;
-    background-color: #24292e; /* gris GitHub */
-    color: white;
+    background-color: #21262d;
+    color: #c9d1d9;
     font-weight: 600;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.25s ease;
+    border: 1px solid #30363d;
+    transition: all 0.25s ease;
 }
 
 .btn:hover {
-    background-color: #000;
+    background-color: #30363d;
+    color: white;
 }
 
-/* BOTONES DE PROYECTO / CV */
-.btn-project,
-.btn-proyecto {
-    background-color: #005bbb;
+/* BOTONES DE PROYECTO */
+.btn-project {
+    background-color: #0a58ca;
+    border: none;
+    color: white;
 }
 
-.btn-project:hover,
-.btn-proyecto:hover {
-    background-color: #003f80;
+.btn-project:hover {
+    background-color: #084298;
 }
 
-/* BOTÓN CREDENCIAL */
-.btn-credential {
-    background-color: #6c757d;
-    font-size: 0.9rem;
-}
-
-.btn-credential:hover {
-    background-color: #495057;
-}
-
-/* CONTENEDORES */
+/* CONTENEDOR */
 .container {
     max-width: 900px;
-    margin: 60px auto;
+    margin: 70px auto;
     padding: 0 20px;
 }
 
+/* TÍTULOS */
 h2 {
-    color: #005bbb;
+    color: #58a6ff;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
 }
 
-/* TARJETAS (HTML + JS) */
-.project-card,
-.proyecto-card {
-    background-color: white;
+/* TARJETAS */
+.project-card {
+    background-color: #161b22;
     padding: 25px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #30363d;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* PROYECTOS */
-.botones-proyecto {
-    margin-top: 15px;
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* CERTIFICACIONES */
@@ -91,7 +101,6 @@ h2 {
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 /* LISTAS */
@@ -105,9 +114,27 @@ li {
 
 /* FOOTER */
 footer {
-    background-color: #e1e1e1;
+    background-color: #161b22;
     text-align: center;
-    padding: 20px;
-    margin-top: 80px;
-    font-size: 0.9rem;
+    padding: 25px;
+    margin-top: 90px;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
 }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .cert-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
