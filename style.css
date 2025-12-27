@@ -1,157 +1,91 @@
-/* =========================
-   ESTILOS GENERALES
-========================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* ESTILOS GENERALES */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #eef4ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
     color: #333;
-    line-height: 1.6;
 }
 
-/* =========================
-   HERO / CABECERA
-========================= */
-.hero {
+/* CABECERA */
+header {
     background-color: #005bbb;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 40px 20px;
 }
 
-.hero h1 {
-    font-size: 3em;
+header h1 {
     margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.hero-botones {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.btn {
-    background-color: white;
-    color: #005bbb;
-    padding: 12px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: #dbe9ff;
-}
-
-.btn.secundario {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-}
-
-.btn.secundario:hover {
-    background-color: rgba(255,255,255,0.2);
-}
-
-/* =========================
-   SECCIONES
-========================= */
+/* SECCIONES */
 section {
-    max-width: 1000px;
-    margin: 60px auto;
+    max-width: 900px;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
 h2 {
     color: #005bbb;
-    margin-bottom: 20px;
 }
 
-/* =========================
-   SOBRE MÍ
-========================= */
-.sobre-mi p {
-    font-size: 1.1em;
-}
-
-/* =========================
-   PROYECTOS
-========================= */
+/* LISTA DE PROYECTOS */
 .lista-proyectos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
 }
 
+/* TARJETA DE PROYECTO */
 .proyecto-card {
     background-color: white;
-    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .proyecto-card h3 {
-    margin-bottom: 10px;
+    margin-top: 0;
 }
 
-.proyecto-card p {
-    margin-bottom: 15px;
+/* BOTONES */
+.botones-proyecto {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
 }
 
-.proyecto-card a {
-    display: inline-block;
+.btn-proyecto {
     background-color: #005bbb;
     color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 14px;
+    border-radius: 6px;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.proyecto-card a:hover {
+.btn-proyecto:hover {
     background-color: #003f80;
 }
 
-/* =========================
-   SKILLS
-========================= */
-.skills ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skills li {
-    background-color: #005bbb;
+/* BOTÓN GITHUB DIFERENTE */
+.btn-github {
+    background-color: #333;
     color: white;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 0.9em;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* =========================
-   FOOTER
-========================= */
+.btn-github:hover {
+    background-color: #111;
+}
+
+/* FOOTER */
 footer {
-    background-color: #005bbb;
-    color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 80px;
+    background-color: #e1e1e1;
+    margin-top: 60px;
 }
-
-footer a {
-    color: white;
-    text-decoration: underline;
-}
-
