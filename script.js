@@ -1,37 +1,37 @@
-// =======================================
-// PORTFOLIO · JAVASCRIPT PRINCIPAL
-// Este archivo se encarga de cargar
-// dinámicamente los proyectos
-// =======================================
+// Esperamos a que cargue todo el HTML
+document.addEventListener("DOMContentLoaded", () => {
 
-// Lista de proyectos del portfolio
-const proyectos = [
-    {
-        nombre: "DavanteDent",
-        descripcion: "Aplicación web para la gestión de citas de una clínica dental. Permite crear, modificar y eliminar citas usando LocalStorage.",
-        enlace: "proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/"
-    }
-];
+    // Array con los proyectos del portfolio
+    const proyectos = [
+        {
+            nombre: "DavanteDent",
+            descripcion: "Aplicación web para la gestión de citas de una clínica dental usando HTML, CSS y JavaScript.",
+            enlace: "proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/"
+        }
+    ];
 
-// Contenedor donde se insertan los proyectos
-const contenedor = document.getElementById("listaProyectos");
+    const contenedor = document.getElementById("listaProyectos");
 
-// Recorremos los proyectos y los mostramos
-proyectos.forEach(proyecto => {
+    // Recorremos los proyectos y los mostramos en tarjetas
+    proyectos.forEach(proyecto => {
+        const card = document.createElement("div");
+        card.className = "proyecto-card";
 
-    // Creamos la tarjeta
-    const card = document.createElement("div");
-    card.className = "proyecto-card";
+        card.innerHTML = `
+            <h3>${proyecto.nombre}</h3>
+            <p>${proyecto.descripcion}</p>
 
-    card.innerHTML = `
-        <h3>${proyecto.nombre}</h3>
-        <p>${proyecto.descripcion}</p>
-        <a href="${proyecto.enlace}" target="_blank">
-            Ver proyecto
-        </a>
-    `;
+            <div class="botones-proyecto">
+                <a href="${proyecto.enlace}" target="_blank" class="btn-proyecto">
+                    Ver proyecto
+                </a>
 
-    // La añadimos al DOM
-    contenedor.appendChild(card);
+                <a href="https://github.com/Ayaxlc" target="_blank" class="btn-github">
+                    GitHub
+                </a>
+            </div>
+        `;
+
+        contenedor.appendChild(card);
+    });
 });
-
