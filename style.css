@@ -11,11 +11,38 @@ header {
     background-color: #005bbb;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 header h1 {
     margin-bottom: 10px;
+}
+
+/* BOTONES DEL HEADER */
+.botones-header {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn-header {
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Colores diferenciados */
+.btn-proyectos { background-color: #ffc107; color: #333; }
+.btn-email { background-color: #198754; }
+.btn-linkedin { background-color: #0a66c2; }
+.btn-github { background-color: #24292e; }
+
+.btn-header:hover {
+    opacity: 0.85;
 }
 
 /* SECCIONES */
@@ -42,20 +69,20 @@ h2 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-top: 6px solid #005bbb;
 }
 
 .proyecto-card h3 {
     margin-top: 0;
 }
 
-/* BOTONES */
+/* BOTONES DE PROYECTO */
 .botones-proyecto {
-    display: flex;
-    gap: 10px;
     margin-top: 15px;
 }
 
 .btn-proyecto {
+    display: inline-block;
     background-color: #005bbb;
     color: white;
     padding: 10px 14px;
@@ -66,20 +93,6 @@ h2 {
 
 .btn-proyecto:hover {
     background-color: #003f80;
-}
-
-/* BOTÓN GITHUB DIFERENTE */
-.btn-github {
-    background-color: #333;
-    color: white;
-    padding: 10px 14px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn-github:hover {
-    background-color: #111;
 }
 
 /* FOOTER */
