@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.getElementById("themeToggle");
 
-    // Cargar preferencia guardada
+    const switchDark = document.getElementById("darkSwitch");
+
+    // Cargar estado guardado
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
-        toggle.checked = true;
+        switchDark.checked = true;
     }
 
-    // Cambiar tema al pulsar
-    toggle.addEventListener("change", () => {
-        if (toggle.checked) {
+    // Cambiar al pulsar
+    switchDark.addEventListener("change", () => {
+        if (switchDark.checked) {
             document.body.classList.add("dark");
             localStorage.setItem("theme", "dark");
         } else {
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Botones credenciales
+    // Botones de credenciales
     document.querySelectorAll(".btn-credential").forEach(btn => {
         btn.addEventListener("click", () => {
             window.open(btn.dataset.url, "_blank");
