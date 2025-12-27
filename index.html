@@ -7,48 +7,69 @@
 </head>
 <body>
 
-<header class="hero">
+<!-- CABECERA -->
+<header>
     <h1>Ayax López</h1>
     <p>Estudiante de Desarrollo de Aplicaciones Web (DAW)</p>
 
-    <div class="hero-buttons">
-        <a href="#proyectos" class="btn btn-projects">Proyectos</a>
-        <a href="mailto:tuemail@email.com" class="btn btn-contact">Contacto</a>
-        <a href="https://www.linkedin.com/in/TU-LINKEDIN" target="_blank" class="btn btn-linkedin">LinkedIn</a>
-        <a href="https://github.com/Ayaxlc" target="_blank" class="btn btn-github">GitHub</a>
-        <a href="cv/index.html" class="btn btn-cv">CV</a>
+    <!-- BOTONES SUPERIORES (SENCILLOS, COMO GITHUB) -->
+    <div class="top-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="mailto:tuemail@email.com">Contacto</a>
+        <a href="https://www.linkedin.com/in/TU-LINKEDIN" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Ayaxlc" target="_blank" class="github-btn">GitHub</a>
     </div>
 </header>
 
-<section class="section">
+<!-- SOBRE MÍ -->
+<section>
     <h2>Sobre mí</h2>
     <p>
-        Estudiante de Desarrollo de Aplicaciones Web con experiencia real
-        como Técnico de Sistemas, administración de entornos Microsoft y
-        automatización de procesos.
+        Estoy cursando el Grado Superior de Desarrollo de Aplicaciones Web.
+        Este portfolio recoge mis proyectos prácticos desarrollados con
+        HTML, CSS y JavaScript, aplicando los conceptos aprendidos en clase.
     </p>
 </section>
 
-<section id="proyectos" class="section">
+<!-- PROYECTOS -->
+<section id="proyectos">
     <h2>Proyectos</h2>
 
-    <div class="project-card">
+    <div class="card">
         <h3>DavanteDent</h3>
         <p>
-            Aplicación web para la gestión de citas de una clínica dental,
-            usando HTML, CSS y JavaScript con LocalStorage.
+            Aplicación web para la gestión de citas de una clínica dental.
+            Permite crear, modificar y eliminar citas usando LocalStorage.
         </p>
-        <a href="proyectos/davantedent/" target="_blank" class="btn btn-projects">
+
+        <a href="proyectos/davantedent/" target="_blank" class="btn">
             Ver proyecto
         </a>
     </div>
-
 </section>
 
+<!-- EXPERIENCIA LABORAL -->
+<section>
+    <h2>Experiencia Laboral</h2>
+
+    <div class="card">
+        <p>
+            Experiencia profesional como Técnico y Administrador de Sistemas,
+            trabajando con entornos Microsoft, automatización y soporte TI.
+        </p>
+
+        <!-- BOTÓN EXACTAMENTE COMO VER PROYECTO -->
+        <a href="cv/index.html" class="btn">
+            Ver CV
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
     <p>© 2025 · Ayax López</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
+
