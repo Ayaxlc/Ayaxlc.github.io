@@ -1,33 +1,28 @@
-// Esperamos a que cargue todo el HTML
+// Esperamos a que el HTML esté cargado
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Array con los proyectos del portfolio
+    // Lista de proyectos del portfolio
     const proyectos = [
         {
             nombre: "DavanteDent",
-            descripcion: "Aplicación web para la gestión de citas de una clínica dental usando HTML, CSS y JavaScript.",
+            descripcion: "Aplicación web para la gestión de citas de una clínica dental. Permite crear, modificar y eliminar citas usando LocalStorage.",
             enlace: "proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/"
         }
+        // Aquí podrás añadir más proyectos en el futuro
     ];
 
     const contenedor = document.getElementById("listaProyectos");
 
-    // Recorremos los proyectos y los mostramos en tarjetas
-    proyectos.forEach(proyecto => {
+    proyectos.forEach(p => {
         const card = document.createElement("div");
         card.className = "proyecto-card";
 
         card.innerHTML = `
-            <h3>${proyecto.nombre}</h3>
-            <p>${proyecto.descripcion}</p>
-
+            <h3>${p.nombre}</h3>
+            <p>${p.descripcion}</p>
             <div class="botones-proyecto">
-                <a href="${proyecto.enlace}" target="_blank" class="btn-proyecto">
+                <a href="${p.enlace}" target="_blank" class="btn-proyecto">
                     Ver proyecto
-                </a>
-
-                <a href="https://github.com/Ayaxlc" target="_blank" class="btn-github">
-                    GitHub
                 </a>
             </div>
         `;
