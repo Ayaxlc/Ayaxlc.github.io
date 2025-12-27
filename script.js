@@ -1,25 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggleBtn = document.getElementById("toggleTheme");
+    const toggle = document.getElementById("themeToggle");
 
-    // Cargar preferencia
+    // Cargar preferencia guardada
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
-        toggleBtn.textContent = "☀️ Light";
+        toggle.checked = true;
     }
 
-    toggleBtn.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
-
-        if (document.body.classList.contains("dark")) {
+    // Cambiar tema al pulsar
+    toggle.addEventListener("change", () => {
+        if (toggle.checked) {
+            document.body.classList.add("dark");
             localStorage.setItem("theme", "dark");
-            toggleBtn.textContent = "☀️ Light";
         } else {
+            document.body.classList.remove("dark");
             localStorage.setItem("theme", "light");
-            toggleBtn.textContent = "🌙 Dark";
         }
     });
 
-    // Certificaciones
+    // Botones credenciales
     document.querySelectorAll(".btn-credential").forEach(btn => {
         btn.addEventListener("click", () => {
             window.open(btn.dataset.url, "_blank");
