@@ -1,5 +1,5 @@
 <!--
-MI PORTFOLIO PERSONAL
+PORTFOLIO PERSONAL
 Página principal de GitHub Pages
 Desde aquí se accede a todos mis proyectos
 -->
@@ -13,35 +13,43 @@ Desde aquí se accede a todos mis proyectos
 </head>
 <body>
 
+<!-- CABECERA -->
 <header>
     <h1>Ayax López</h1>
     <p>Estudiante de Desarrollo de Aplicaciones Web (DAW)</p>
+
+    <!-- BOTONES DE CONTACTO -->
+    <div class="botones-header">
+        <a href="#proyectos" class="btn-header btn-proyectos">Ver proyectos</a>
+        <a href="mailto:Ayax.lopezcamps@gmail.com" class="btn-header btn-email">Email</a>
+        <a href="https://linkedin.com/in/ayaxlopez" target="_blank" class="btn-header btn-linkedin">LinkedIn</a>
+        <a href="https://github.com/Ayaxlc" target="_blank" class="btn-header btn-github">GitHub</a>
+    </div>
 </header>
 
+<!-- SOBRE MI -->
 <section>
     <h2>Sobre mí</h2>
     <p>
         Estoy cursando el Grado Superior de Desarrollo de Aplicaciones Web.
-        Este portfolio muestra mis proyectos prácticos realizados con
-        HTML, CSS y JavaScript.
+        Este portfolio recoge mis proyectos prácticos desarrollados con
+        HTML, CSS y JavaScript, aplicando los conceptos aprendidos en clase.
     </p>
 </section>
 
-<section>
+<!-- PROYECTOS -->
+<section id="proyectos">
     <h2>Proyectos</h2>
 
-    <!-- Aquí JavaScript cargará los proyectos -->
+    <!-- Aquí JavaScript insertará los proyectos -->
     <div id="listaProyectos" class="lista-proyectos"></div>
 </section>
 
+<!-- FOOTER -->
 <footer>
     <p>© 2025 · Ayax López</p>
-    <p>
-        <a href="https://github.com/Ayaxlc" target="_blank">GitHub</a>
-    </p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
