@@ -1,14 +1,18 @@
-/* RESET BÁSICO */
+/* RESET */
 * {
     box-sizing: border-box;
 }
 
-/* BODY */
+/* ======================
+   DARK MODE (DEFAULT)
+====================== */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #0d1117; /* fondo oscuro tipo GitHub */
+    background-color: #0d1117;
     color: #c9d1d9;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* HERO */
@@ -19,17 +23,7 @@ body {
     padding: 70px 20px;
 }
 
-.hero h1 {
-    margin-bottom: 10px;
-    font-size: 2.5rem;
-}
-
-.hero p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
-
-/* BOTONES HERO */
+/* BOTONES */
 .hero-buttons {
     margin-top: 30px;
     display: flex;
@@ -38,15 +32,15 @@ body {
     flex-wrap: wrap;
 }
 
-/* BOTONES GENERALES */
 .btn {
-    text-decoration: none;
     padding: 10px 20px;
     border-radius: 6px;
     background-color: #21262d;
     color: #c9d1d9;
     font-weight: 600;
     border: 1px solid #30363d;
+    cursor: pointer;
+    text-decoration: none;
     transition: all 0.25s ease;
 }
 
@@ -55,7 +49,6 @@ body {
     color: white;
 }
 
-/* BOTONES DE PROYECTO */
 .btn-project {
     background-color: #0a58ca;
     border: none;
@@ -66,17 +59,15 @@ body {
     background-color: #084298;
 }
 
-/* CONTENEDOR */
+/* CONTENEDORES */
 .container {
     max-width: 900px;
     margin: 70px auto;
     padding: 0 20px;
 }
 
-/* TÍTULOS */
 h2 {
     color: #58a6ff;
-    margin-bottom: 15px;
     font-size: 1.8rem;
 }
 
@@ -87,12 +78,11 @@ h2 {
     border-radius: 10px;
     margin-top: 20px;
     border: 1px solid #30363d;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* CERTIFICACIONES */
@@ -100,16 +90,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
-}
-
-/* LISTAS */
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 8px;
 }
 
 /* FOOTER */
@@ -122,19 +102,44 @@ footer {
     border-top: 1px solid #30363d;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
+/* ======================
+   LIGHT MODE
+====================== */
 
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .cert-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+body.light-mode {
+    background-color: #f4f6f8;
+    color: #222;
 }
 
+body.light-mode .hero {
+    background: linear-gradient(135deg, #005bbb, #007bff);
+}
+
+body.light-mode .btn {
+    background-color: #ffffff;
+    color: #222;
+    border: 1px solid #ccc;
+}
+
+body.light-mode .btn:hover {
+    background-color: #eaeaea;
+}
+
+body.light-mode .btn-project {
+    background-color: #005bbb;
+    color: white;
+}
+
+body.light-mode h2 {
+    color: #005bbb;
+}
+
+body.light-mode .project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+body.light-mode footer {
+    background-color: #e1e1e1;
+    color: #333;
+}
