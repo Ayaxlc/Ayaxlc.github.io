@@ -28,7 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
 
         contenedor.appendChild(card);
-        
+
+        // Abrir credencial
+        document.querySelectorAll('.btn-credential').forEach(button => {
+    button.addEventListener('click', () => {
+        const url = button.dataset.url;
+        window.open(url, '_blank');
+    });
+});
+
         // Scroll suave al pulsar "Proyectos"
 document.querySelectorAll('a[href^="#"]').forEach(enlace => {
     enlace.addEventListener("click", function (e) {
