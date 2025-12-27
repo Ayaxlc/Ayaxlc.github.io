@@ -1,0 +1,60 @@
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* CABECERA */
+header {
+    background-color: #005bbb;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* SECCIONES */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #005bbb;
+}
+
+/* PROYECTOS */
+.proyecto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #005bbb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.proyecto a:hover {
+    background-color: #003f80;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e1e1e1;
+    margin-top: 60px;
+}
