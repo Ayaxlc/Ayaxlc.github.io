@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Proyectos · Ayax López</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <title>Mis Proyectos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="proyectos.css" />
 </head>
 <body>
 
-<header class="hero">
-    <h1>Mis Proyectos</h1>
+    <!-- HEADER -->
+    <header class="projects-header">
+        <a href="index.html" class="projects-back-btn">← Volver al portfolio</a>
+        <h1>Mis Proyectos</h1>
+    </header>
 
-    <div class="hero-buttons">
-        <a href="index.html" class="btn">Volver al portfolio</a>
-    </div>
-</header>
+    <!-- CONTENIDO -->
+    <main class="projects-container">
 
- 
-<section class="container">
-   <p>Listado de proyectos desarrollados</p>
-    <div class="project-card">
-        <h3>DavanteDent</h3>
-        <p>
-            Aplicación web para la gestión de citas de una clínica dental.
-            Permite crear, modificar y eliminar citas usando LocalStorage.
-        </p>
+        <section class="projects-section">
+            <h2>Listado de proyectos desarrollados</h2>
 
-        <a href="https://ayaxlc.github.io/proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/"
-           target="_blank"
-           class="btn btn-action">
-            Ver proyecto
-        </a>
-    </div>
+            <article class="project-card">
+                <h3>DavanteDent</h3>
 
-</section>
+                <p>
+                    Aplicación web para la gestión de citas de una clínica dental.
+                    Permite crear, modificar y eliminar citas usando LocalStorage.
+                </p>
 
-<footer>
-    © 2025 · Ayax López Camps
-</footer>
+                <a
+                    href="proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/index.html"
+                    class="btn-action"
+                >
+                    Ver proyecto
+                </a>
+            </article>
+
+            <!-- Aquí podrás añadir más proyectos -->
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="projects-footer">
+        © 2025 · Ayax López Camps
+    </footer>
 
 </body>
 </html>
