@@ -1,28 +1,28 @@
+// Esperar a que cargue todo el HTML
 document.addEventListener("DOMContentLoaded", () => {
 
-    const switchDark = document.getElementById("darkSwitch");
+    /* ===============================
+       DARK MODE TOGGLE
+    =============================== */
+    const darkSwitch = document.getElementById("darkSwitch");
 
-    // Cargar estado guardado
-    if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark");
-        switchDark.checked = true;
+    if (darkSwitch) {
+        darkSwitch.addEventListener("change", () => {
+            document.body.classList.toggle("dark", darkSwitch.checked);
+        });
     }
 
-    // Cambiar al pulsar
-    switchDark.addEventListener("change", () => {
-        if (switchDark.checked) {
-            document.body.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-        } else {
-            document.body.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-        }
-    });
-
-    // Botones de credenciales
-    document.querySelectorAll(".btn-credential").forEach(btn => {
-        btn.addEventListener("click", () => {
-            window.open(btn.dataset.url, "_blank");
+    /* ===============================
+       SCROLL SUAVE PARA ANCLAS
+    =============================== */
+    document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+        enlace.addEventListener("click", function (e) {
+            e.preventDefault();
+            const destino = document.querySelector(this.getAttribute("href"));
+            if (destino) {
+                destino.scrollIntoView({ behavior: "smooth" });
+            }
         });
     });
+
 });
