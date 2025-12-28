@@ -1,4 +1,6 @@
-/* RESET BÁSICO */
+/* =========================
+   RESET BÁSICO
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +8,21 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Arial, sans-serif;
     background-color: #f5f7f9;
     color: #1f2937;
     line-height: 1.6;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 .cv-header {
+    position: relative; /* clave para el botón */
     text-align: center;
-    padding: 3rem 1rem 2rem;
+    padding: 4rem 1rem 2.5rem;
     background-color: #ffffff;
     border-bottom: 1px solid #e5e7eb;
 }
@@ -30,32 +37,56 @@ body {
     color: #4b5563;
 }
 
-/* CONTENEDOR PRINCIPAL */
-.cv-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
+/* BOTÓN VOLVER ARRIBA */
+.cv-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background-color: #0b5ed7;
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
 }
 
-/* SECCIÓN */
+.cv-back:hover {
+    background-color: #0949a5;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+.cv-container {
+    max-width: 1100px;
+    margin: 3rem auto 0; /* centra visualmente */
+    padding: 0 1rem 4rem;
+}
+
+/* =========================
+   SECCIÓN
+========================= */
 .cv-section h2 {
     font-size: 1.6rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     color: #0f172a;
 }
 
-/* JOB / TIMELINE */
+/* =========================
+   JOB / TIMELINE
+========================= */
 .cv-job {
     position: relative;
     display: flex;
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 }
 
 /* LÍNEA VERTICAL */
 .cv-line {
-    position: relative;
     width: 2px;
     background-color: #c7d2fe;
     margin-left: 12px;
@@ -66,7 +97,7 @@ body {
     content: "";
     position: absolute;
     left: 4px;
-    top: 1.2rem;
+    top: 1.4rem;
     width: 14px;
     height: 14px;
     background-color: #0b5ed7;
@@ -74,18 +105,22 @@ body {
     z-index: 2;
 }
 
-/* TARJETA */
+/* =========================
+   TARJETA
+========================= */
 .cv-content {
     background-color: #ffffff;
-    padding: 1.8rem 2rem;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    padding: 2rem 2.2rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     width: 100%;
 }
 
-/* TEXTOS */
+/* =========================
+   TEXTOS
+========================= */
 .cv-company {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.2rem;
 }
@@ -98,49 +133,50 @@ body {
 .cv-meta {
     font-size: 0.9rem;
     color: #6b7280;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .cv-area {
     font-weight: 600;
-    margin-top: 1.2rem;
-    margin-bottom: 0.4rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0.5rem;
     color: #0f172a;
 }
 
-/* LISTAS */
+/* =========================
+   LISTAS
+========================= */
 .cv-content ul {
     margin-left: 1.2rem;
     margin-bottom: 0.8rem;
 }
 
 .cv-content li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.45rem;
     color: #374151;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 .cv-footer {
-    text-align: center;
-    padding: 2rem 1rem;
+    display: none; /* ya no lo necesitamos abajo */
 }
 
-.cv-footer a {
-    text-decoration: none;
-    background-color: #0b5ed7;
-    color: #ffffff;
-    padding: 0.7rem 1.4rem;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: background-color 0.2s ease;
-}
-
-.cv-footer a:hover {
-    background-color: #0949a5;
-}
-
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
+    .cv-header {
+        padding-top: 4.5rem;
+    }
+
+    .cv-back {
+        top: 15px;
+        left: 15px;
+        font-size: 0.85rem;
+    }
+
     .cv-job {
         gap: 1rem;
     }
@@ -154,6 +190,6 @@ body {
     }
 
     .cv-content {
-        padding: 1.4rem;
+        padding: 1.5rem;
     }
 }
