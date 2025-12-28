@@ -86,6 +86,12 @@ body {
     margin-bottom: 3.5rem;
 }
 
+/* DURACIÓN EN EMPRESA */
+.cv-duration {
+    font-weight: 600;
+    color: #1e40af;
+}
+
 /* LÍNEA VERTICAL */
 .cv-line {
     width: 2px;
