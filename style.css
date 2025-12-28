@@ -19,20 +19,21 @@ body {
    =============================== */
 
 .hero {
-    background-color: #003b73; /* Deep Ocean Blue */
+    background-color: #003b73; /* Deep Ocean */
     color: white;
+    padding: 70px 20px;
     text-align: center;
-    padding: 60px 20px;
-    position: relative;
 }
 
 .hero h1 {
-    margin-bottom: 10px;
+    margin: 0 0 8px 0;
+    font-size: 32px;
 }
 
 .hero p {
     margin: 0;
     font-size: 16px;
+    opacity: 0.95;
 }
 
 /* ===============================
@@ -40,22 +41,22 @@ body {
    =============================== */
 
 .hero-buttons {
-    margin-top: 25px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 14px;
     flex-wrap: wrap;
 }
 
 /* ===============================
-   BOTONES GENERALES
+   BOTONES (UNIFICADOS)
    =============================== */
 
 .btn {
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 6px;
-    background-color: #24292e;
+    background-color: #24292e; /* MISMO COLOR PARA TODOS */
     color: white;
     font-weight: 600;
     border: none;
@@ -68,19 +69,10 @@ body {
     transform: translateY(-1px);
 }
 
-/* Botón azul (Ver proyecto / Ver CV) */
-.btn-project {
-    background-color: #003b73;
-}
-
-.btn-project:hover {
-    background-color: #00264d;
-}
-
-/* Botón credencial */
+/* Ya no diferenciamos colores */
+.btn-project,
 .btn-credential {
     background-color: #24292e;
-    white-space: nowrap;
 }
 
 /* ===============================
@@ -89,10 +81,10 @@ body {
 
 .dark-toggle {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 14px;
 }
 
@@ -138,28 +130,28 @@ body {
 }
 
 /* ===============================
-   CONTENEDORES
+   CONTENEDORES / SECCIONES
    =============================== */
 
 .container {
     max-width: 900px;
-    margin: 60px auto;
+    margin: 70px auto;
     padding: 0 20px;
 }
 
 h2 {
     color: #003b73;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 /* ===============================
-   TARJETAS (TODO)
+   TARJETAS (TODAS)
    =============================== */
 
 .project-card {
     background-color: white;
-    padding: 25px;
-    border-radius: 8px;
+    padding: 28px;
+    border-radius: 10px;
     margin-top: 20px;
 }
 
@@ -169,8 +161,8 @@ h2 {
 
 .cert-item {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 30px;
 }
 
@@ -185,8 +177,9 @@ h2 {
 footer {
     background-color: #e1e1e1;
     text-align: center;
-    padding: 20px;
-    margin-top: 80px;
+    padding: 22px;
+    margin-top: 90px;
+    font-size: 14px;
 }
 
 /* ===============================
@@ -215,10 +208,10 @@ body.dark footer {
     color: #cbd5f5;
 }
 
-body.dark .btn-project {
-    background-color: #2563eb;
+body.dark .btn {
+    background-color: #1f2937;
 }
 
-body.dark .btn-project:hover {
-    background-color: #1d4ed8;
+body.dark .btn:hover {
+    background-color: #000;
 }
