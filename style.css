@@ -8,16 +8,11 @@ body {
 
 /* HERO */
 .hero {
-    background-color: #083a6b; /* Deep ocean */
+    position: relative; /* 🔴 CLAVE para que el toggle vaya a la derecha */
+    background-color: #003b73;
     color: white;
-    padding: 60px 20px 70px;
-    position: relative;
-}
-
-.hero-content {
-    max-width: 900px;
-    margin: 0 auto;
     text-align: center;
+    padding: 60px 20px 80px;
 }
 
 .hero h1 {
@@ -25,10 +20,11 @@ body {
 }
 
 .hero p {
-    margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .hero-buttons {
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     gap: 12px;
@@ -40,18 +36,25 @@ body {
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 6px;
-    background-color: #1f2937;
+    background-color: #24292e;
     color: white;
     font-weight: 600;
-    border: none;
-    cursor: pointer;
+    transition: background-color 0.25s ease;
 }
 
 .btn:hover {
     background-color: #000;
 }
 
-/* CONTENEDORES */
+.btn-action {
+    background-color: #1e293b;
+}
+
+.btn-action:hover {
+    background-color: #020617;
+}
+
+/* CONTENEDOR */
 .container {
     max-width: 900px;
     margin: 70px auto;
@@ -59,8 +62,7 @@ body {
 }
 
 h2 {
-    color: #083a6b;
-    margin-bottom: 20px;
+    color: #003b73;
 }
 
 /* TARJETAS */
@@ -68,7 +70,7 @@ h2 {
     background-color: white;
     padding: 25px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 /* CERTIFICACIONES */
@@ -76,32 +78,98 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    margin-top: 30px;
+    padding-left: 30px;
+    border-left: 2px solid #cbd5f5;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -9px;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+    background-color: #003b73;
+    border-radius: 50%;
+}
+
+.timeline-card {
+    background-color: white;
+    padding: 22px 25px;
+    border-radius: 10px;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: #64748b;
 }
 
 /* FOOTER */
 footer {
     background-color: #e5e7eb;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     margin-top: 80px;
 }
 
-/* DARK MODE SWITCH */
+/* DARK MODE */
+body.dark {
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+body.dark h2 {
+    color: #60a5fa;
+}
+
+body.dark .project-card,
+body.dark .timeline-card {
+    background-color: #0b1220;
+}
+
+body.dark footer {
+    background-color: #020617;
+    color: #cbd5f5;
+}
+
+body.dark .timeline {
+    border-color: #334155;
+}
+
+body.dark .timeline-dot {
+    background-color: #60a5fa;
+}
+
+/* DARK TOGGLE */
 .dark-toggle {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 25px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 14px;
+    gap: 8px;
+    font-size: 13px;
 }
 
+.mode-label {
+    color: white;
+}
+
+/* SWITCH */
 .switch {
     position: relative;
-    width: 40px;
-    height: 20px;
+    width: 42px;
+    height: 22px;
 }
 
 .switch input {
@@ -111,16 +179,17 @@ footer {
 .slider {
     position: absolute;
     inset: 0;
-    background-color: #bbb;
+    background-color: #94a3b8;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .slider::before {
     content: "";
     position: absolute;
-    height: 14px;
-    width: 14px;
+    height: 16px;
+    width: 16px;
     left: 3px;
     bottom: 3px;
     background-color: white;
@@ -134,22 +203,4 @@ footer {
 
 .switch input:checked + .slider::before {
     transform: translateX(20px);
-}
-
-/* DARK MODE */
-body.dark {
-    background-color: #020617;
-    color: #e5e7eb;
-}
-
-body.dark h2 {
-    color: #60a5fa;
-}
-
-body.dark .project-card {
-    background-color: #0b1220;
-}
-
-body.dark footer {
-    background-color: #020617;
 }
