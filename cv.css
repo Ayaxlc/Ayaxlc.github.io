@@ -37,23 +37,25 @@ body {
     color: #4b5563;
 }
 
-/* BOTÓN VOLVER ARRIBA */
-.cv-back {
+/* BOTÓN VOLVER AL PORTFOLIO (UNIFICADO) */
+.cv-back-btn {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 25px;
+    left: 25px;
+
     text-decoration: none;
-    background-color: #0b5ed7;
+    background-color: #1e293b;
     color: #ffffff;
-    padding: 0.6rem 1.2rem;
+    padding: 0.65rem 1.3rem;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 0.9rem;
-    transition: background-color 0.2s ease;
+    font-size: 0.95rem;
+
+    transition: background-color 0.25s ease;
 }
 
-.cv-back:hover {
-    background-color: #0949a5;
+.cv-back-btn:hover {
+    background-color: #020617;
 }
 
 /* =========================
