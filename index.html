@@ -8,27 +8,26 @@
 <body>
 
 <header class="hero">
-    <!-- DARK MODE ARRIBA DERECHA -->
-   <div class="dark-toggle">
-    <span class="mode-label">Light</span>
+    <!-- DARK MODE (ARRIBA DERECHA) -->
+    <div class="dark-toggle">
+        <span class="mode-label">Light</span>
 
-    <label class="switch">
-        <input type="checkbox" id="darkSwitch">
-        <span class="slider"></span>
-    </label>
+        <label class="switch">
+            <input type="checkbox" id="darkSwitch">
+            <span class="slider"></span>
+        </label>
 
-    <span class="mode-label">Dark</span>
-</div>
-    <div class="hero-content">
-        <h1>Ayax López Camps</h1>
-        <p>Administrador de sistemas | Desarrollador web</p>
+        <span class="mode-label">Dark</span>
+    </div>
 
-        <div class="hero-buttons">
-            <a href="#proyectos" class="btn">Proyectos</a>
-            <a href="mailto:ayax.lopezcamps@gmail.com" class="btn">Contacto</a>
-            <a href="https://www.linkedin.com/" target="_blank" class="btn">LinkedIn</a>
-            <a href="https://github.com/Ayaxlc" target="_blank" class="btn">GitHub</a>
-        </div>
+    <h1>Ayax López Camps</h1>
+    <p>Administrador de sistemas | Desarrollador web</p>
+
+    <div class="hero-buttons">
+        <a href="#proyectos" class="btn">Proyectos</a>
+        <a href="mailto:ayax.lopezcamps@gmail.com" class="btn">Contacto</a>
+        <a href="https://www.linkedin.com/" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://github.com/Ayaxlc" target="_blank" class="btn">GitHub</a>
     </div>
 </header>
 
@@ -53,7 +52,7 @@
             Permite crear, modificar y eliminar citas usando LocalStorage.
         </p>
         <a href="proyectos/proyecto-desarrollo-web-entorno-cliente/davantedent/"
-           class="btn" target="_blank">
+           class="btn btn-action" target="_blank">
             Ver proyecto
         </a>
     </div>
@@ -62,13 +61,46 @@
 <section class="container">
     <h2>Experiencia Laboral</h2>
 
-    <div class="project-card">
-        <p>
-            Técnico y Administrador de Sistemas. Gestión de entornos Microsoft,
-            soporte avanzado y automatización de tareas.
-        </p>
-        <a href="cv.html" class="btn">Ver CV</a>
+    <div class="timeline">
+
+        <!-- ASITUR -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <h3><strong>Asitur</strong> · Técnico de sistemas</h3>
+                <span class="timeline-date">
+                    nov. 2025 – Actualidad · Tres Cantos (Madrid)
+                </span>
+                <ul>
+                    <li>Gestión de dispositivos y políticas con Azure AD e Intune.</li>
+                    <li>Autopilot, despliegue y estandarización.</li>
+                    <li>Automatización con PowerShell y Power Automate.</li>
+                    <li>Soporte técnico nivel 1 y 2.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- LOGIRAIL -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <h3><strong>LogiRAIL (Grupo RENFE)</strong> · Administrador de sistemas</h3>
+                <span class="timeline-date">
+                    jun. 2024 – dic. 2025 · Madrid · Híbrido
+                </span>
+                <ul>
+                    <li>Administración de entornos Microsoft.</li>
+                    <li>Azure AD, Intune, Office 365, Exchange y SharePoint.</li>
+                    <li>Automatización con PowerShell.</li>
+                    <li>Flujos con Power Automate.</li>
+                    <li>Soporte avanzado y escalado de incidencias.</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
+
+    <a href="cv.html" class="btn btn-action">Ver CV</a>
 </section>
 
 <section class="container">
@@ -76,18 +108,20 @@
 
     <div class="project-card cert-item">
         <span><strong>CISCO</strong> – Introducción a la ciberseguridad</span>
-        <button class="btn btn-credential"
-                data-url="https://www.credly.com/badges/27a3d38d-6c54-45e3-a249-87b188807283">
+        <a class="btn btn-action btn-credential"
+           href="https://www.credly.com/badges/27a3d38d-6c54-45e3-a249-87b188807283"
+           target="_blank">
             ID credencial
-        </button>
+        </a>
     </div>
 
     <div class="project-card cert-item">
         <span><strong>ScrumStudy</strong> – Scrum Fundamentals Certified (SFC™)</span>
-        <button class="btn btn-credential"
-                data-url="https://www.scrumstudy.com/certification/verify?type=SFC&number=1135320">
+        <a class="btn btn-action btn-credential"
+           href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1135320"
+           target="_blank">
             ID credencial
-        </button>
+        </a>
     </div>
 </section>
 
