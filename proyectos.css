@@ -1,0 +1,143 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Arial, sans-serif;
+    background-color: #f5f7f9;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+.projects-header {
+    position: relative;
+    background-color: #003b71;
+    color: #ffffff;
+    text-align: center;
+    padding: 4.5rem 1rem 4rem;
+}
+
+.projects-header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+/* BOTÓN VOLVER */
+.projects-back-btn {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    text-decoration: none;
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 0.65rem 1.3rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    transition: background-color 0.25s ease;
+}
+
+.projects-back-btn:hover {
+    background-color: #020617;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+.projects-container {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+/* =========================
+   SECCIÓN
+========================= */
+.projects-section h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #003b71;
+}
+
+/* =========================
+   TARJETA PROYECTO
+========================= */
+.project-card {
+    background-color: #ffffff;
+    padding: 2rem 2.2rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2.5rem;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.project-card p {
+    margin-bottom: 1.4rem;
+    color: #374151;
+}
+
+/* BOTÓN VER PROYECTO */
+.btn-action {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.25s ease;
+}
+
+.btn-action:hover {
+    background-color: #020617;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.projects-footer {
+    margin-top: 4rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    background-color: #e5e7eb;
+    color: #374151;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .projects-header {
+        padding-top: 4.5rem;
+    }
+
+    .projects-back-btn {
+        top: 15px;
+        left: 15px;
+        font-size: 0.85rem;
+    }
+
+    .project-card {
+        padding: 1.6rem;
+    }
+}
