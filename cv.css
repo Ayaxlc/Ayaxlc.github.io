@@ -1,183 +1,159 @@
 /* RESET BÁSICO */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f5f7f9;
+    color: #1f2937;
     line-height: 1.6;
 }
 
-/* =========================
-   HERO
-========================= */
-.hero {
-    background-color: #005bbb;
-    color: white;
+/* HEADER */
+.cv-header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 3rem 1rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
 }
 
-.hero h1 {
-    margin-bottom: 8px;
-}
-
-.hero p {
-    margin-top: 0;
-}
-
-/* BOTONES HERO */
-.hero-buttons {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-/* =========================
-   BOTONES
-========================= */
-.btn {
-    text-decoration: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    background-color: #24292e; /* estilo GitHub */
-    color: white;
-    font-weight: 600;
-    transition: background-color 0.25s ease;
-    border: none;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #000;
-}
-
-/* Botón de proyecto / CV */
-.btn-project {
-    background-color: #005bbb;
-}
-
-.btn-project:hover {
-    background-color: #003f80;
-}
-
-/* =========================
-   CONTENEDORES
-========================= */
-.container {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
-
-h2 {
-    color: #005bbb;
-    margin-bottom: 25px;
-}
-
-/* =========================
-   TARJETAS GENERALES
-========================= */
-.project-card {
-    background-color: white;
-    padding: 25px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* Certificaciones */
-.cert-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-}
-
-/* =========================
-   EXPERIENCIA LABORAL (CV)
-========================= */
-.cv-section h2 {
-    font-size: 32px;
-    margin-bottom: 45px;
-}
-
-/* Cada trabajo */
-.cv-job {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 60px;
-}
-
-/* Línea vertical tipo LinkedIn */
-.cv-line {
-    width: 4px;
-    background-color: #d6d6d6;
-    border-radius: 3px;
-}
-
-/* Empresa (ÚNICO en negrita) */
-.cv-company {
-    font-size: 20px;
+.cv-header h1 {
+    font-size: 2rem;
     font-weight: 700;
-    margin: 0;
 }
 
-/* Puesto */
+.cv-header p {
+    margin-top: 0.5rem;
+    color: #4b5563;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.cv-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+/* SECCIÓN */
+.cv-section h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #0f172a;
+}
+
+/* JOB / TIMELINE */
+.cv-job {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* LÍNEA VERTICAL */
+.cv-line {
+    position: relative;
+    width: 2px;
+    background-color: #c7d2fe;
+    margin-left: 12px;
+}
+
+/* PUNTO */
+.cv-job::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1.2rem;
+    width: 14px;
+    height: 14px;
+    background-color: #0b5ed7;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* TARJETA */
+.cv-content {
+    background-color: #ffffff;
+    padding: 1.8rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    width: 100%;
+}
+
+/* TEXTOS */
+.cv-company {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
 .cv-role {
-    margin: 6px 0;
-    font-size: 15px;
+    font-weight: 600;
+    color: #1e40af;
 }
 
-/* Meta info */
 .cv-meta {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 18px;
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
 }
 
-/* Subapartados */
 .cv-area {
     font-weight: 600;
-    margin: 20px 0 8px;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+    color: #0f172a;
 }
 
-/* Listas */
+/* LISTAS */
 .cv-content ul {
-    margin: 0 0 12px 18px;
+    margin-left: 1.2rem;
+    margin-bottom: 0.8rem;
 }
 
 .cv-content li {
-    margin-bottom: 6px;
+    margin-bottom: 0.4rem;
+    color: #374151;
 }
 
-/* =========================
-   FOOTER
-========================= */
-footer {
-    background-color: #e1e1e1;
+/* FOOTER */
+.cv-footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 80px;
-    font-size: 14px;
+    padding: 2rem 1rem;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 600px) {
+.cv-footer a {
+    text-decoration: none;
+    background-color: #0b5ed7;
+    color: #ffffff;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.cv-footer a:hover {
+    background-color: #0949a5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
     .cv-job {
-        flex-direction: column;
+        gap: 1rem;
     }
 
     .cv-line {
-        width: 100%;
-        height: 4px;
+        margin-left: 6px;
+    }
+
+    .cv-job::before {
+        left: -2px;
+    }
+
+    .cv-content {
+        padding: 1.4rem;
     }
 }
-
