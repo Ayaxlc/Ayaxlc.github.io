@@ -63,11 +63,16 @@ body {
 .btn-principal {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
+    padding: 0.7rem 1.8rem;
     background-color: var(--verde);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.btn-principal:hover {
+    background-color: #256428;
 }
 
 /* CATEGORÍAS */
@@ -202,4 +207,29 @@ body {
     .producto-imagen img {
         max-width: 100%;
     }
+    /* TRANSICIONES SUAVES */
+a, .card, .producto, button {
+    transition: all 0.3s ease;
+}
+
+.card:hover,
+.producto:hover {
+    transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+
+    .nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .grid-categorias,
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+}
+
 }
