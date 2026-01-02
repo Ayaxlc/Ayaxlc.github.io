@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Cerdo | Fresh Market</title>
+    <title>Frutas y Verduras | Fresh Market</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,40 +12,27 @@
     <div class="logo">Fresh Market</div>
     <nav class="nav">
         <a href="index.html">Inicio</a>
-        <a href="carne.html">Carne</a>
+        <a href="#categorias">Categorías</a>
     </nav>
 </header>
 
-<section class="destacados">
-    <h1>Cerdo</h1>
+<section class="categorias">
+    <h1>Frutas y Verduras</h1>
 
     <div class="grid-productos">
-
         <div class="producto">
-            <div class="producto-img-placeholder">
- 
-</div>
-
-            <h3>Pulled Pork</h3>
-            <p class="precio">7,99 €</p>
-            <a href="producto-pulledpork.html" class="btn-secundario">Ver producto</a>
+            <h3>Manzanas</h3>
+            <p class="precio">1,49 €/kg</p>
         </div>
-
         <div class="producto">
-            <div class="producto-img-placeholder">
-
-</div>
-
-            <h3>Lomo de cerdo</h3>
-            <p class="precio">4,99 €</p>
-            <a href="producto-lomo.html" class="btn-secundario">Ver producto</a>
+            <h3>Zanahorias</h3>
+            <p class="precio">0,99 €/kg</p>
         </div>
-
     </div>
 </section>
 
 <footer class="footer">
-    <p>Fresh Market · Productos de cerdo seleccionados</p>
+    <p>Fresh Market · Frescura garantizada</p>
 </footer>
 
 </body>
