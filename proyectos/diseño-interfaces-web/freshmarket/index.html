@@ -1,64 +1,153 @@
 <!DOCTYPE html>
+<!--
+    Indico que el documento es HTML5.
+    Esto es lo primero que debe llevar cualquier página web actual.
+-->
 <html lang="es">
+<!--
+    Indico que el idioma principal de la página es español.
+    Esto ayuda a la accesibilidad y a los lectores de pantalla.
+-->
 <head>
     <meta charset="UTF-8">
-    <title>Fresh Market</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!--
+        Configuro la codificación de caracteres en UTF-8
+        para que se vean bien acentos y caracteres especiales.
+    -->
 
-    <!-- HEADER -->
+    <title>Fresh Market</title>
+    <!--
+        Título de la página que aparece en la pestaña del navegador.
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        Esta etiqueta es fundamental para que la web
+        se adapte correctamente a móviles y tablets.
+    -->
+
+    <link rel="stylesheet" href="style.css">
+    <!--
+        Enlazo el archivo CSS donde está todo el diseño
+        y la maquetación de la web.
+    -->
+</head>
+
+<body>
+<!--
+    Dentro del body va todo el contenido visible de la página.
+-->
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+    <!--
+        Cabecera de la web.
+        Contiene el nombre del supermercado y el menú de navegación.
+    -->
     <header class="header">
         <div class="logo">Fresh Market</div>
+        <!--
+            Logo del sitio web.
+            En este caso es texto, pero podría ser una imagen.
+        -->
+
         <nav class="nav">
+            <!--
+                Menú de navegación principal.
+                Permite moverse por las distintas secciones.
+            -->
             <a href="#">Inicio</a>
             <a href="#categorias">Categorías</a>
             <a href="#ofertas">Ofertas</a>
         </nav>
     </header>
 
-    <!-- HERO -->
+    <!-- =========================
+         HERO
+         ========================= -->
+    <!--
+        Sección principal de bienvenida.
+        Sirve para presentar el supermercado y su objetivo.
+    -->
     <section class="hero">
         <h1>Compra fresca, rápida y desde casa</h1>
         <p>Productos organizados por categorías para facilitar tu compra</p>
+
+        <!--
+            Botón principal que lleva a la sección de categorías.
+        -->
         <a href="#categorias" class="btn-principal">Ver categorías</a>
     </section>
 
-    <!-- CATEGORÍAS -->
+    <!-- =========================
+         CATEGORÍAS
+         ========================= -->
+    <!--
+        Sección donde se muestran las distintas categorías
+        del supermercado.
+    -->
     <section class="categorias" id="categorias">
         <h2>Categorías</h2>
+
+        <!--
+            Contenedor que agrupa todas las categorías.
+            En CSS se usa Grid para organizarlas.
+        -->
         <div class="grid-categorias">
-            <div class="card">Frutas y Verduras</div>
-            <div class="card">Carne</div>
-            <div class="card">Pescado</div>
-            <div class="card">Bebidas</div>
-            <div class="card">Limpieza</div>
-            <div class="card">Snacks</div>
+            <a href="frutas-verduras.html" class="card">Frutas y Verduras</a>
+            <a href="carne.html" class="card">Carne</a>
+            <a href="pescado.html" class="card">Pescado</a>
+            <a href="bebidas.html" class="card">Bebidas</a>
+            <a href="limpieza.html" class="card">Limpieza</a>
+            <a href="snacks.html" class="card">Snacks</a>
         </div>
     </section>
 
-    <!-- PRODUCTOS DESTACADOS -->
+    <!-- =========================
+         PRODUCTOS DESTACADOS
+         ========================= -->
+    <!--
+        Sección donde se muestran algunos productos destacados
+        para llamar la atención del usuario.
+    -->
     <section class="destacados" id="ofertas">
         <h2>Productos destacados</h2>
+
+        <!--
+            Contenedor de productos.
+            Se organiza en forma de cuadrícula usando CSS Grid.
+        -->
         <div class="grid-productos">
+
+            <!-- Producto 1 -->
             <div class="producto">
-                <img src="img/pulled-pork.jpg" alt="Pulled pork">
                 <h3>Pulled Pork</h3>
                 <p class="precio">7,99 €</p>
-                <a href="producto.html" class="btn-secundario">Ver producto</a>
+                <a href="producto-pulledpork.html" class="btn-secundario">
+                    Ver producto
+                </a>
             </div>
 
+            <!-- Producto 2 -->
             <div class="producto">
-                <img src="img/lomo.jpg" alt="Lomo de cerdo">
                 <h3>Lomo de cerdo</h3>
-                <p class="precio">6,49 €</p>
-                <a href="producto.html" class="btn-secundario">Ver producto</a>
+                <p class="precio">4,99 €</p>
+                <a href="producto-lomo.html" class="btn-secundario">
+                    Ver producto
+                </a>
             </div>
+
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <!--
+        Pie de página de la web.
+        Incluye información general del supermercado.
+    -->
     <footer class="footer">
         <p>Fresh Market · Tu supermercado online de confianza</p>
     </footer>
