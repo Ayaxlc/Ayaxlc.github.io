@@ -1,65 +1,52 @@
-🛒 Fresh Market
+# 🛒 Fresh Market
 
-Aplicación web desarrollada como proyecto de Desarrollo de Aplicaciones Web (DAW).
+Aplicación web desarrollada como proyecto de **Desarrollo de Aplicaciones Web (DAW)**.
 
-Descripción
+---
 
-Fresh Market es una web estática que simula un supermercado online, desarrollada para practicar la estructura, maquetación y navegación entre páginas usando HTML y CSS.
+## 📄 Descripción
+
+**Fresh Market** es una web estática que simula un supermercado online, desarrollada para practicar la estructura, maquetación y navegación entre páginas utilizando **HTML y CSS**.
 
 El proyecto permite:
 
-Navegar entre distintas categorías de productos
+- Navegar entre distintas categorías de productos  
+- Acceder a subcategorías (por ejemplo: carne → cerdo)  
+- Visualizar páginas de productos individuales  
+- Mantener una estructura clara y coherente entre todas las páginas  
 
-Acceder a subcategorías (carne → cerdo)
+Las imágenes utilizadas son **placeholders**, ya que el objetivo del proyecto es el diseño de la interfaz y la organización del contenido, no el uso de fotografías reales.
 
-Visualizar páginas de producto individuales
+---
 
-Mantener una estructura clara y coherente entre todas las páginas
+## 🛠️ Tecnologías utilizadas
 
-Las imágenes utilizadas son placeholders, ya que el objetivo del proyecto es el diseño y la organización del contenido, no el uso de fotografías reales.
+- **HTML5**
+- **CSS3**
+- **Flexbox**
+- **CSS Grid**
+- **Media Queries**
+- **Tipografía:** Roboto
 
-Tecnologías utilizadas
+---
 
-HTML5
+## ▶️ Cómo usar el proyecto
 
-CSS3
+1. Abrir el archivo `index.html`
+2. Navegar por las distintas categorías del supermercado
+3. Acceder a los productos destacados y páginas de detalle
 
-Flexbox
+---
 
-CSS Grid
+## 📁 Estructura del proyecto
 
-Media Queries
+- `index.html` → Página principal  
+- `carne.html`, `cerdo.html`, `pescado.html`, etc. → Categorías  
+- `producto-pulledpork.html`, `producto-lomo.html` → Productos  
+- `style.css` → Estilos generales del sitio  
 
-Tipografía: Roboto
+---
 
-Cómo usar el proyecto
+## 👤 Autor
 
-Abrir el archivo index.html
-
-Navegar por las categorías desde la página principal
-
-Acceder a los productos desarrollados desde la categoría Carne
-
-No requiere instalación ni servidor.
-
-Alcance del proyecto
-
-El desarrollo se ha centrado únicamente en las secciones solicitadas en el enunciado del ejercicio:
-
-Página principal
-
-Categoría Carne
-
-Subcategoría Cerdo
-
-Productos:
-
-Pulled Pork
-
-Lomo de cerdo
-
-El resto de categorías se han incluido a nivel de estructura, pero no se han desarrollado completamente.
-
-Autor
-
-Proyecto realizado por Ayax López
+Proyecto realizado por **Ayax López**
