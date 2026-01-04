@@ -1,0 +1,60 @@
+# Indico la versión del formato de Docker Compose que voy a usar
+# Es la version del propio archivo docker-compose
+version: "3.9"
+
+# Se definenlos servicios (contenedores) de nuestra aplicación
+services:
+
+  # ============================
+  # SERVICIO PHP
+  # ============================
+  php:
+
+    # Imagen oficial de PHP con soporte FPM
+    # FPM permite que Nginx le pase archivos PHP para ejecutarlos
+    image: php:8.2-fpm
+
+    # Nombre que tendrá el contenedor 
+    container_name: php_fpm
+
+    # Volumen compartido
+    # La carpeta ./src de nuestro ordenador se comparte con el contenedor
+    # /var/www/html es donde PHP busca los archivos web
+    volumes:
+      - ./src:/var/www/html
+
+
+  # ============================
+  # SERVICIO NGINX
+  # ============================
+  nginx:
+
+    # Imagen oficial de Nginx
+    # Nginx será el servidor web que atiende al navegador
+    image: nginx:latest
+
+    # Nombre del contenedor de Nginx
+    container_name: nginx_server
+
+    # Mapeo de puertos
+    # Puerto 8080 del ordenador -> puerto 80 del contenedor
+    # Gracias a esto se puede accederdesde el navegador con localhost:8080
+    ports:
+      - "8080:80"
+
+    # Volúmenes compartidos
+    volumes:
+
+      # Compartimos el código de la aplicación
+      # Nginx necesita acceder a los archivos PHP y HTML
+      - ./src:/var/www/html
+
+      # Archivo de configuración personalizado de Nginx
+      # Sustituye la configuración por defecto de Nginx
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+
+    # Se indica que Nginx depende de PHP
+    # Primero se inicia PHP y luego Nginx
+    depends_on:
+      - php
+
