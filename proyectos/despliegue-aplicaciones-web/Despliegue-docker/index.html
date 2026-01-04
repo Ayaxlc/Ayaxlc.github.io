@@ -6,50 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
+            font-family: system-ui, Arial, sans-serif;
+            background: #f5f7f9;
             margin: 0;
             padding: 0;
+            color: #1f2937;
         }
 
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
         }
 
         h1, h2 {
-            color: #333;
+            color: #003b71;
         }
 
         p {
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         code {
-            background: #eee;
+            background: #eef2f7;
             padding: 4px 6px;
             border-radius: 4px;
         }
 
-        .buttons {
-            margin-top: 30px;
-        }
-
-        a.button {
-            display: inline-block;
-            margin-right: 15px;
-            padding: 12px 20px;
-            background: #007acc;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        a.button.secondary {
-            background: #444;
+        pre {
+            background: #eef2f7;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
         }
     </style>
 </head>
@@ -62,44 +53,60 @@
     <p>
         Este proyecto muestra cómo desplegar una aplicación web sencilla utilizando
         <strong>Docker</strong> y <strong>Docker Compose</strong>, separando el servidor web
-        (Nginx) y el lenguaje de servidor (PHP) en contenedores distintos.
+        (<strong>Nginx</strong>) y el lenguaje de servidor (<strong>PHP</strong>)
+        en contenedores independientes.
     </p>
 
-    <h2> Objetivo del proyecto</h2>
+    <h2>Objetivo del proyecto</h2>
     <p>
         El objetivo es aprender cómo se puede ejecutar una aplicación web sin instalar
-        manualmente Nginx o PHP en el sistema operativo, utilizando contenedores.
+        manualmente Nginx o PHP en el sistema operativo, utilizando contenedores Docker.
     </p>
 
     <h2>🐳 ¿Cómo funciona?</h2>
-    <p>
-        El proyecto utiliza dos contenedores:
-    </p>
+    <p>El proyecto utiliza dos contenedores:</p>
     <ul>
         <li><strong>Nginx</strong>: atiende las peticiones del navegador.</li>
         <li><strong>PHP</strong>: ejecuta el código del servidor.</li>
     </ul>
-
     <p>
-        Ambos contenedores se gestionan mediante Docker Compose.
+        Ambos contenedores se gestionan mediante <strong>Docker Compose</strong>,
+        lo que permite levantarlos de forma conjunta con un solo comando.
     </p>
 
-    <h2> Ejecución en local</h2>
+    <h2>📁 Estructura del proyecto</h2>
+    <pre>
+Despliegue-docker/
+├── nginx/
+│   └── default.conf
+├── php/
+│   └── Dockerfile
+├── src/
+│   └── index.php
+├── docker-compose.yml
+└── README.md
+    </pre>
+
+    <h2>▶️ Ejecución en local</h2>
     <p>
         Para ejecutar el proyecto en local es necesario tener Docker instalado y ejecutar:
     </p>
-
     <p><code>docker compose up -d --build</code></p>
-
     <p>
         La aplicación estará disponible en:
     </p>
-
     <p><code>http://localhost:8080</code></p>
-
     <p>
         (Este puerto funciona únicamente en local).
     </p>
+
+    <h2>ℹ️ Nota sobre GitHub Pages</h2>
+    <p>
+        Este proyecto se muestra en GitHub Pages únicamente a nivel descriptivo,
+        ya que GitHub Pages no permite ejecutar PHP ni contenedores Docker.
+        El despliegue real debe realizarse en local.
+    </p>
+
 </main>
 
 </body>
