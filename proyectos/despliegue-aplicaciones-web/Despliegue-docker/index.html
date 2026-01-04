@@ -7,8 +7,7 @@
 
     <style>
         :root {
-            --primary-blue: #003b71;
-            --primary-blue-dark: #00264d;
+            --primary-blue: #00264d;
             --bg-light: #f4f6f8;
             --text-dark: #1f2933;
         }
@@ -83,11 +82,11 @@
             text-decoration: none;
             border-radius: 8px;
             font-weight: 600;
-            transition: background-color 0.25s ease;
+            transition: opacity 0.25s ease;
         }
 
         .button:hover {
-            background-color: var(--primary-blue-dark);
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -110,7 +109,6 @@
         </p>
 
         <h2>🐳 ¿Cómo funciona?</h2>
-        <p>La aplicación está compuesta por tres servicios:</p>
         <ul>
             <li><strong>Nginx</strong>: servidor web que atiende las peticiones del navegador.</li>
             <li><strong>PHP (PHP-FPM)</strong>: ejecuta el código del lado servidor.</li>
@@ -123,22 +121,13 @@
         </p>
 
         <h2>Ejecución en local</h2>
-        <p>
-            Para ejecutar el proyecto en local es necesario tener Docker instalado y ejecutar el
-            siguiente comando:
-        </p>
+        <p>Ejecutar el siguiente comando:</p>
 
-        <p>
-            <code>docker compose up -d --build</code>
-        </p>
+        <p><code>docker compose up -d --build</code></p>
 
-        <p>
-            Una vez iniciado, la aplicación estará disponible en:
-        </p>
+        <p>Aplicación disponible en:</p>
 
-        <p>
-            <code>http://localhost:8080</code>
-        </p>
+        <p><code>http://localhost:8080</code></p>
 
         <p><em>(Este puerto funciona únicamente en entorno local).</em></p>
 
