@@ -1,50 +1,47 @@
-# Versión del formato de Docker Compose
 version: "3.9"
 
-# Definición de los servicios (contenedores) de la aplicación
 services:
 
-  # ============================
+  # =========================
   # SERVICIO PHP
-  # ============================
+  # =========================
   php:
-    # Imagen oficial de PHP con soporte FPM
-    # La versión se obtiene desde el archivo .env
     image: php:${PHP_VERSION}-fpm
-
-    # Nombre del contenedor
-    container_name: ${PROJECT_NAME}_php
-
-    # Volumen compartido
-    # La carpeta ./src del host se monta en /var/www/html del contenedor
+    container_name: php_fpm
     volumes:
       - ./src:/var/www/html
+    depends_on:
+      - db
 
-
-  # ============================
+  # =========================
   # SERVICIO NGINX
-  # ============================
+  # =========================
   nginx:
-    # Imagen oficial de Nginx
     image: nginx:latest
-
-    # Nombre del contenedor
-    container_name: ${PROJECT_NAME}_nginx
-
-    # Mapeo de puertos
-    # Puerto definido en el archivo .env
+    container_name: nginx_server
     ports:
       - "${NGINX_PORT}:80"
-
-    # Volúmenes compartidos
     volumes:
-      # Código de la aplicación
       - ./src:/var/www/html
-
-      # Configuración personalizada de Nginx
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-
-    # Dependencia del servicio PHP
     depends_on:
       - php
+
+  # =========================
+  # SERVICIO BASE DE DATOS (SQL)
+  # =========================
+  db:
+    image: mysql:8
+    container_name: mysql_db
+    env_file:
+      - .env
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+
+# =========================
+# VOLÚMENES PERSISTENTES
+# =========================
+volumes:
+  db_data:
 
