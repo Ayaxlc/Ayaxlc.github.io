@@ -4,43 +4,82 @@
     <meta charset="UTF-8">
     <title>Despliegue de aplicación web con Docker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
-            font-family: system-ui, Arial, sans-serif;
-            background: #f5f7f9;
             margin: 0;
-            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: #f5f7f9;
             color: #1f2937;
+            line-height: 1.6;
         }
 
         main {
             max-width: 900px;
-            margin: 40px auto;
-            background: #ffffff;
+            margin: 60px auto;
+            background-color: #ffffff;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
 
-        h1, h2 {
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 35px;
             color: #003b71;
+            font-size: 1.4rem;
         }
 
         p {
-            line-height: 1.7;
+            margin: 12px 0;
+        }
+
+        ul {
+            margin-left: 20px;
         }
 
         code {
-            background: #eef2f7;
-            padding: 4px 6px;
-            border-radius: 4px;
+            background-color: #e5e7eb;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 0.95rem;
         }
 
-        pre {
-            background: #eef2f7;
-            padding: 15px;
+        .buttons {
+            margin-top: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 10px;
+            padding: 12px 20px;
+            background-color: #003b71;
+            color: #ffffff;
+            text-decoration: none;
             border-radius: 8px;
-            overflow-x: auto;
+            font-weight: 600;
+            transition: background-color 0.25s ease;
+        }
+
+        .button.secondary {
+            background-color: #1e293b;
+        }
+
+        .button:hover {
+            background-color: #00264d;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #6b7280;
         }
     </style>
 </head>
@@ -51,63 +90,68 @@
     <h1>Despliegue de aplicación web con Docker</h1>
 
     <p>
-        Este proyecto muestra cómo desplegar una aplicación web sencilla utilizando
-        <strong>Docker</strong> y <strong>Docker Compose</strong>, separando el servidor web
-        (<strong>Nginx</strong>) y el lenguaje de servidor (<strong>PHP</strong>)
-        en contenedores independientes.
+        Este proyecto consiste en el despliegue de una aplicación web sencilla utilizando
+        <strong>Docker</strong> y <strong>Docker Compose</strong>, separando cada servicio
+        en contenedores independientes para simular un entorno real de producción.
     </p>
 
     <h2>Objetivo del proyecto</h2>
     <p>
-        El objetivo es aprender cómo se puede ejecutar una aplicación web sin instalar
-        manualmente Nginx o PHP en el sistema operativo, utilizando contenedores Docker.
+        El objetivo principal es aprender cómo se puede ejecutar una aplicación web
+        sin instalar manualmente servidores o lenguajes en el sistema operativo,
+        utilizando contenedores y una configuración reproducible.
     </p>
 
-    <h2>¿Cómo funciona?</h2>
-    <p>El proyecto utiliza dos contenedores:</p>
+    <h2>🐳 ¿Cómo funciona?</h2>
+    <p>La aplicación está compuesta por tres servicios:</p>
     <ul>
-        <li><strong>Nginx</strong>: atiende las peticiones del navegador.</li>
-        <li><strong>PHP</strong>: ejecuta el código del servidor.</li>
+        <li><strong>Nginx</strong>: servidor web que atiende las peticiones del navegador.</li>
+        <li><strong>PHP (PHP-FPM)</strong>: ejecuta el código del lado servidor.</li>
+        <li><strong>MySQL</strong>: base de datos gestionada mediante un volumen persistente.</li>
     </ul>
-    <p>
-        Ambos contenedores se gestionan mediante <strong>Docker Compose</strong>,
-        lo que permite levantarlos de forma conjunta con un solo comando.
-    </p>
 
-    <h2>Estructura del proyecto</h2>
-    <pre>
-Despliegue-docker/
-├── nginx/
-│   └── default.conf
-├── php/
-│   └── Dockerfile
-├── src/
-│   └── index.php
-├── docker-compose.yml
-└── README.md
-    </pre>
+    <p>
+        Los servicios se orquestan mediante <strong>Docker Compose</strong>, utilizando
+        un archivo <code>.env</code> para la gestión de variables sensibles como puertos
+        y credenciales.
+    </p>
 
     <h2>Ejecución en local</h2>
     <p>
-        Para ejecutar el proyecto en local es necesario tener Docker instalado y ejecutar:
-    </p>
-    <p><code>docker compose up -d --build</code></p>
-    <p>
-        La aplicación estará disponible en:
-    </p>
-    <p><code>http://localhost:8080</code></p>
-    <p>
-        (Este puerto funciona únicamente en local).
+        Para ejecutar el proyecto en local es necesario tener Docker instalado y ejecutar
+        el siguiente comando:
     </p>
 
-    <h2>Nota sobre GitHub Pages</h2>
+    <p><code>docker compose up -d --build</code></p>
+
     <p>
-        Este proyecto se muestra en GitHub Pages únicamente a nivel descriptivo,
-        ya que GitHub Pages no permite ejecutar PHP ni contenedores Docker.
-        El despliegue real debe realizarse en local.
+        Una vez iniciado, la aplicación estará disponible en:
     </p>
+
+    <p><code>http://localhost:8080</code></p>
+
+    <p>
+        (Este puerto funciona únicamente en entorno local).
+    </p>
+
+    <div class="buttons">
+        <a href="https://github.com/Ayaxlc/ayaxlc.github.io/tree/main/proyectos/despliegue-aplicaciones-web/Despliegue-docker"
+           class="button"
+           target="_blank">
+            Ver repositorio en GitHub
+        </a>
+
+        <a href="../../../../proyectos.html"
+           class="button secondary">
+            Volver a proyectos
+        </a>
+    </div>
 
 </main>
+
+<footer>
+    © 2025 · Ayax López Camps
+</footer>
 
 </body>
 </html>
