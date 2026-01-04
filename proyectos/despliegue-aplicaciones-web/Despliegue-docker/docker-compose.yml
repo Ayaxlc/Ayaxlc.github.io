@@ -1,25 +1,22 @@
-# Indico la versión del formato de Docker Compose que voy a usar
-# Es la version del propio archivo docker-compose
+# Versión del formato de Docker Compose
 version: "3.9"
 
-# Se definenlos servicios (contenedores) de nuestra aplicación
+# Definición de los servicios (contenedores) de la aplicación
 services:
 
   # ============================
   # SERVICIO PHP
   # ============================
   php:
-
     # Imagen oficial de PHP con soporte FPM
-    # FPM permite que Nginx le pase archivos PHP para ejecutarlos
-    image: php:8.2-fpm
+    # La versión se obtiene desde el archivo .env
+    image: php:${PHP_VERSION}-fpm
 
-    # Nombre que tendrá el contenedor 
-    container_name: php_fpm
+    # Nombre del contenedor
+    container_name: ${PROJECT_NAME}_php
 
     # Volumen compartido
-    # La carpeta ./src de nuestro ordenador se comparte con el contenedor
-    # /var/www/html es donde PHP busca los archivos web
+    # La carpeta ./src del host se monta en /var/www/html del contenedor
     volumes:
       - ./src:/var/www/html
 
@@ -28,33 +25,26 @@ services:
   # SERVICIO NGINX
   # ============================
   nginx:
-
     # Imagen oficial de Nginx
-    # Nginx será el servidor web que atiende al navegador
     image: nginx:latest
 
-    # Nombre del contenedor de Nginx
-    container_name: nginx_server
+    # Nombre del contenedor
+    container_name: ${PROJECT_NAME}_nginx
 
     # Mapeo de puertos
-    # Puerto 8080 del ordenador -> puerto 80 del contenedor
-    # Gracias a esto se puede accederdesde el navegador con localhost:8080
+    # Puerto definido en el archivo .env
     ports:
-      - "8080:80"
+      - "${NGINX_PORT}:80"
 
     # Volúmenes compartidos
     volumes:
-
-      # Compartimos el código de la aplicación
-      # Nginx necesita acceder a los archivos PHP y HTML
+      # Código de la aplicación
       - ./src:/var/www/html
 
-      # Archivo de configuración personalizado de Nginx
-      # Sustituye la configuración por defecto de Nginx
+      # Configuración personalizada de Nginx
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
 
-    # Se indica que Nginx depende de PHP
-    # Primero se inicia PHP y luego Nginx
+    # Dependencia del servicio PHP
     depends_on:
       - php
 
