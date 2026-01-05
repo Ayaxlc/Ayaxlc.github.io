@@ -10,8 +10,9 @@
   <a href="https://github.com/Ayaxlc">GitHub</a>
 </p>
 
-![Profile views](https://komarev.com/ghpvc/?username=Ayaxlc&label=Visitors&color=blue&style=flat)
-
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Ayaxlc&label=Visitors&color=purple&style=flat" />
+</p>
 
 ---
 
