@@ -10,7 +10,8 @@
   <a href="https://github.com/Ayaxlc">GitHub</a>
 </p>
 
-![Visitors](https://komarev.com/ghpvc/?username=Ayaxlc&label=Visitors&color=purple&style=flat)
+![Profile views](https://komarev.com/ghpvc/?username=Ayaxlc&label=Visitors&color=blue&style=flat)
+
 
 ---
 
