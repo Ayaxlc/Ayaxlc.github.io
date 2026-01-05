@@ -1,4 +1,4 @@
-<h1 align="center">Portfolio · Ayax López Camps</h1>
+<h1 align="center">Portfolio Digital</h1>
 
 <p align="center">
   Administrador de sistemas · Desarrollo web
@@ -12,7 +12,6 @@
 
 ---
 
-## 📌 Sobre este repositorio
 
 Portfolio personal de desarrollo web.
 
@@ -22,8 +21,6 @@ Es un portfolio en construcción, pensado para mostrar mi evolución y mis bases
 en el desarrollo de aplicaciones web.
 
 ---
-
-#Contenido
 
 Este repositorio contiene el código fuente de mi portfolio personal, desarrollado con:
 
@@ -39,7 +36,6 @@ Incluye secciones como:
 
 ---
 
-#Acceso al portfolio
 
 **Ver portfolio online:**  
 🔗 https://ayaxlc.github.io
