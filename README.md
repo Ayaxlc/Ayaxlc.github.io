@@ -22,7 +22,7 @@ en el desarrollo de aplicaciones web.
 
 ---
 
-Este repositorio contiene el código fuente de mi portfolio personal, desarrollado con:
+Contiene el código fuente de mi portfolio digital, desarrollado con:
 
 - HTML5
 - CSS3
@@ -35,6 +35,10 @@ Incluye secciones como:
 - Formación y certificaciones
 
 ---
+
+Este repositorio presenta una visión general del proyecto.
+Para consultar la información completa, el detalle de los proyectos y el contenido actualizado,
+puede accederse al portfolio digital a través del enlace adjunto.
 
 
 **Ver portfolio online:**  
