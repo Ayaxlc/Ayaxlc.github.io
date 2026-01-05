@@ -1,12 +1,18 @@
-<h1 align="center">Portfolio de Desarrollo Web</h1>
+<h1 align="center">Portfolio · Ayax López Camps</h1>
 
 <p align="center">
-  <em>Portfolio personal en constante evolución</em>
+  Administrador de sistemas · Desarrollo web
+</p>
+
+<p align="center">
+  <a href="https://ayaxlc.github.io">🌐 Portfolio web</a> ·
+  <a href="https://www.linkedin.com/">LinkedIn</a> ·
+  <a href="https://github.com/Ayaxlc">GitHub</a>
 </p>
 
 ---
 
-## 👋 Bienvenido
+## 📌 Sobre este repositorio
 
 Portfolio personal de desarrollo web.
 
@@ -17,33 +23,29 @@ en el desarrollo de aplicaciones web.
 
 ---
 
-## 🛠️ Tecnologías
+#Contenido
 
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" />
-</p>
+Este repositorio contiene el código fuente de mi portfolio personal, desarrollado con:
 
----
+- HTML5
+- CSS3
+- JavaScript
 
-## 📂 Proyectos
-
-> Los proyectos irán apareciendo aquí a medida que avance en mi formación.
-
-- 🔹 Proyecto 1 — Próximamente  
-- 🔹 Proyecto 2 — Próximamente  
+Incluye secciones como:
+- Información personal y profesional
+- Proyectos
+- Experiencia laboral
+- Formación y certificaciones
 
 ---
 
-## 🌱 Estado del portfolio
+#Acceso al portfolio
 
-Este portfolio se encuentra en desarrollo y se irá actualizando
-con nuevos proyectos y mejoras conforme avance mi aprendizaje.
+**Ver portfolio online:**  
+🔗 https://ayaxlc.github.io
 
 ---
 
-## 🔗 Enlaces
 
-- 🌐 Portfolio web: *(si tienes GitHub Pages, pon aquí el enlace)*  
-- 💻 GitHub: https://github.com/Ayaxlc
+© 2025 · Ayax López Camps
+
