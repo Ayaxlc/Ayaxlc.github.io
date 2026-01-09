@@ -1,92 +1,85 @@
-👟 StepUpStore
+# 👟 StepUpStore
 
-Aplicación web de comercio electrónico
-Proyecto del módulo Desarrollo Web en Entorno Servidor (DAW)
+Aplicación web de comercio electrónico  
+Proyecto del módulo **Desarrollo Web en Entorno Servidor (DAW)**
 
-📄 Descripción
+---
 
-StepUpStore es una aplicación web desarrollada con PHP y MySQL que simula el funcionamiento real de una tienda online.
+## 📄 Descripción
 
-El objetivo principal del proyecto es practicar el desarrollo en entorno servidor, trabajando con sesiones, roles de usuario y base de datos.
+**StepUpStore** es una aplicación web desarrollada con **PHP y MySQL** que simula el funcionamiento real de una tienda online.
 
-La aplicación diferencia entre clientes y administrador, mostrando funcionalidades distintas según el tipo de usuario.
+El proyecto está orientado al trabajo en **entorno servidor**, utilizando **sesiones**, **roles de usuario** y **conexión a base de datos**.
 
-🧩 Funcionalidades
-👤 Cliente
+La aplicación diferencia entre usuarios **cliente** y **administrador**, mostrando funcionalidades distintas según el rol.
 
-Inicio y cierre de sesión
+---
 
-Visualización de productos
+## 🧩 Funcionalidades
 
-Añadir productos al carrito
+### 👤 Cliente
+- Inicio y cierre de sesión
+- Visualización de productos
+- Añadir productos al carrito
+- Eliminar productos del carrito
+- Vaciar carrito
+- Finalizar compra
+- Consultar pedidos
 
-Eliminar productos del carrito
+### 🔐 Administrador
+- Gestión de productos
+- Eliminación de productos
+- Gestión de usuarios
+- Eliminación de usuarios de tipo cliente
+- El usuario administrador no puede ser eliminado
 
-Vaciar carrito
+---
 
-Finalizar compra
+## 🏗️ Arquitectura
 
-Consultar pedidos
+La aplicación sigue una **arquitectura en tres capas**:
 
-🔐 Administrador
+- **Capa de presentación**: interfaz y vistas en PHP
+- **Capa de lógica de negocio**: gestión de sesiones, carrito y pedidos
+- **Capa de acceso a datos**: conexión y consultas a MySQL
 
-Gestión de productos
+---
 
-Eliminación de productos
+## 🗄️ Base de datos
 
-Gestión de usuarios
+La base de datos está desarrollada en **MySQL** y contiene las siguientes tablas:
 
-Eliminación de usuarios de tipo cliente
+- usuarios
+- productos
+- pedidos
+- detalle_pedido
 
-El administrador no puede ser eliminado
+---
 
-🏗️ Arquitectura
+## 🧪 Pruebas
 
-La aplicación está organizada siguiendo una arquitectura en tres capas:
+El funcionamiento del proyecto se muestra mediante **vídeos de pruebas**, donde se demuestra:
 
-Capa de presentación → Vistas e interfaz en PHP
-
-Capa de lógica de negocio → Gestión de sesiones, carrito y pedidos
-
-Capa de acceso a datos → Conexión y consultas a MySQL
-
-🗄️ Base de datos
-
-La base de datos está desarrollada en MySQL e incluye las siguientes tablas:
-
-usuarios
-
-productos
-
-pedidos
-
-detalle_pedido
-
-🧪 Pruebas
-
-El funcionamiento del proyecto se demuestra mediante vídeos de pruebas, donde se muestran los distintos casos de uso:
-
-Acceso como cliente
-
-Acceso como administrador
-
-Gestión de productos, usuarios y carrito
+- Acceso como cliente
+- Acceso como administrador
+- Gestión de productos, usuarios y carrito
 
 Los enlaces a los vídeos se incluyen en la memoria del proyecto.
 
-🛠️ Tecnologías utilizadas
+---
 
-PHP
+## 🛠️ Tecnologías utilizadas
 
-MySQL
+- PHP
+- MySQL
+- HTML5
+- CSS
+- Sesiones PHP
 
-HTML5
+---
 
-CSS
+## 👤 Autor
 
-Sesiones PHP
-
-👨‍💻 Autor
-
-Áyax López Camps
+Áyax López Camps  
 Estudiante de Desarrollo de Aplicaciones Web (DAW)
+
