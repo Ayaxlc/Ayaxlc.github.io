@@ -1,55 +1,54 @@
-🛒 StepUpStore
-Aplicación web desarrollada como proyecto de Desarrollo Web en Entorno Servidor (DAW).
+👟 StepUpStore
+
+Aplicación web de comercio electrónico
+Proyecto del módulo Desarrollo Web en Entorno Servidor (DAW)
 
 📄 Descripción
 
-StepUpStore es una aplicación web de comercio electrónico desarrollada con PHP y MySQL que simula el funcionamiento real de una tienda online.
+StepUpStore es una aplicación web desarrollada con PHP y MySQL que simula el funcionamiento real de una tienda online.
 
-El proyecto está enfocado en el trabajo con entorno servidor, gestión de sesiones, roles de usuario y conexión a base de datos.
+El objetivo principal del proyecto es practicar el desarrollo en entorno servidor, trabajando con sesiones, roles de usuario y base de datos.
 
-La aplicación permite diferenciar entre usuarios cliente y administrador, mostrando funcionalidades distintas según el rol.
+La aplicación diferencia entre clientes y administrador, mostrando funcionalidades distintas según el tipo de usuario.
 
-⚙️ Funcionalidades principales
+🧩 Funcionalidades
+👤 Cliente
 
-Cliente
+Inicio y cierre de sesión
 
-Iniciar y cerrar sesión.
+Visualización de productos
 
-Visualizar el catálogo de productos.
+Añadir productos al carrito
 
-Añadir productos al carrito.
+Eliminar productos del carrito
 
-Eliminar productos del carrito.
+Vaciar carrito
 
-Vaciar el carrito.
+Finalizar compra
 
-Finalizar una compra.
+Consultar pedidos
 
-Visualizar pedidos realizados.
+🔐 Administrador
 
-Administrador
+Gestión de productos
 
-Iniciar y cerrar sesión.
+Eliminación de productos
 
-Visualizar todos los productos.
+Gestión de usuarios
 
-Eliminar productos.
+Eliminación de usuarios de tipo cliente
 
-Visualizar usuarios registrados.
-
-Eliminar usuarios de tipo cliente.
-
-El usuario administrador no puede ser eliminado.
+El administrador no puede ser eliminado
 
 🏗️ Arquitectura
 
-La aplicación sigue una arquitectura en tres capas:
+La aplicación está organizada siguiendo una arquitectura en tres capas:
 
-Capa de presentación: interfaz y vistas en PHP.
+Capa de presentación → Vistas e interfaz en PHP
 
-Capa de lógica de negocio: gestión de sesiones, carrito y pedidos.
+Capa de lógica de negocio → Gestión de sesiones, carrito y pedidos
 
-Capa de acceso a datos: conexión y consultas a MySQL.
+Capa de acceso a datos → Conexión y consultas a MySQL
 
 🗄️ Base de datos
 
@@ -65,13 +64,13 @@ detalle_pedido
 
 🧪 Pruebas
 
-El funcionamiento de la aplicación se demuestra mediante vídeos de pruebas, donde se muestran:
+El funcionamiento del proyecto se demuestra mediante vídeos de pruebas, donde se muestran los distintos casos de uso:
 
-Acceso como cliente.
+Acceso como cliente
 
-Acceso como administrador.
+Acceso como administrador
 
-Gestión de productos, usuarios y carrito.
+Gestión de productos, usuarios y carrito
 
 Los enlaces a los vídeos se incluyen en la memoria del proyecto.
 
@@ -87,7 +86,7 @@ CSS
 
 Sesiones PHP
 
-👤 Autor
+👨‍💻 Autor
 
 Áyax López Camps
 Estudiante de Desarrollo de Aplicaciones Web (DAW)
