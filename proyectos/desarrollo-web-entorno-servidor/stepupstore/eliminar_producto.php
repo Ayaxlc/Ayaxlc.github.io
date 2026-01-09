@@ -1,25 +1,18 @@
 <?php
 session_start();
-require_once "conexion.php";
 
-// PROTEGER: solo admin
-if (!isset($_SESSION['usuario']) || $_SESSION['rol'] !== 'admin') {
-    header("Location: login.php");
-    exit;
+if (isset($_GET['index'])) {
+    $index = $_GET['index'];
+
+    if (isset($_SESSION['carrito'][$index])) {
+        // Eliminar producto del carrito
+        unset($_SESSION['carrito'][$index]);
+
+        // Reordenar índices del array
+        $_SESSION['carrito'] = array_values($_SESSION['carrito']);
+    }
 }
 
-// Comprobar que llega el ID
-if (!isset($_GET['id'])) {
-    header("Location: admin_productos.php");
-    exit;
-}
-
-$id = intval($_GET['id']);
-
-// Eliminar producto de la BD
-$sql = "DELETE FROM productos WHERE id_producto = $id";
-$conn->query($sql);
-
-// Volver al panel de admin
-header("Location: admin_productos.php");
+// Volver al carrito
+header("Location: carrito.php");
 exit;
