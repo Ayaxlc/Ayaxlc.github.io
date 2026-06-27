@@ -9,8 +9,6 @@ Este portfolio no solo muestra el resultado de cada proyecto, sino también el c
 
 Si te apetece echar un vistazo, puedes acceder al portfolio digital desde aquí:
 
-## 🌍 Portfolio
-
 ➡️ **[Acceder al portfolio digital](https://ayaxlc.github.io)**
 
 ---
