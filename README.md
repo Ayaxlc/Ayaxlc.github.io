@@ -1,15 +1,12 @@
-```markdown
 # 🌐 Portfolio Personal
 
-![Visitas](https://komarev.com/ghpvc/?username=Ayaxlc&repo=Ayaxlc.github.io&style=flat-square&color=brightgreen)
+![Visitas](https://komarev.com/ghpvc/?username=Ayaxlc&label=Visitas&color=brightgreen&style=flat)
 
 Bienvenido a mi portfolio personal.
 
-En este repositorio se encuentra el código de la página web donde recopilo los proyectos que voy desarrollando durante mi formación y aprendizaje como desarrollador.
+En este repositorio se encuentra el código fuente de la página web donde recopilo los proyectos que voy desarrollando a medida que continúo aprendiendo y adquiriendo experiencia como desarrollador.
 
-Mi objetivo es utilizar este espacio para mostrar la evolución de mis conocimientos, documentar los proyectos en los que trabajo y mantener un lugar donde cualquier persona pueda conocer mi trabajo de una forma sencilla.
-
-Cada proyecto incluye una breve explicación de su propósito y, cuando corresponde, acceso al código fuente para poder consultar su implementación.
+El objetivo de este portfolio es servir como un punto central desde el que conocer mi trabajo, acceder a la documentación de cada proyecto y, cuando corresponde, consultar también su código fuente.
 
 ## 🌍 Portfolio
 
@@ -17,9 +14,8 @@ Cada proyecto incluye una breve explicación de su propósito y, cuando correspo
 
 ---
 
-Este portfolio está en constante evolución, por lo que irá creciendo con nuevos proyectos y mejoras a medida que continúe aprendiendo y adquiriendo experiencia.
+Este portfolio está en constante evolución, por lo que irá creciendo con nuevos proyectos y mejoras conforme continúe aprendiendo.
 
 ## 👨‍💻 Autor
 
 **Áyax López**
-```
