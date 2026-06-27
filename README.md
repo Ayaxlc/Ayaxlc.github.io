@@ -2,11 +2,12 @@
 
 ![Visitas](https://komarev.com/ghpvc/?username=Ayaxlc&label=Visitas&color=brightgreen&style=flat)
 
-Bienvenido a mi portfolio personal.
 
-En este repositorio se encuentra el código fuente de la página web donde recopilo los proyectos que voy desarrollando a medida que continúo aprendiendo y adquiriendo experiencia como desarrollador.
+Este es el lugar donde voy reuniendo los proyectos en los que trabajo. Algunos nacen para aprender una tecnología nueva, otros para poner a prueba ideas o profundizar en conceptos que me resultan interesantes.
 
-El objetivo de este portfolio es servir como un punto central desde el que conocer mi trabajo, acceder a la documentación de cada proyecto y, cuando corresponde, consultar también su código fuente.
+Más que mostrar un resultado final, este portfolio refleja mi evolución como desarrollador. Cada proyecto representa un paso más en ese camino y me ayuda a seguir aprendiendo, mejorando y afrontando nuevos retos.
+
+Si te apetece echar un vistazo, puedes acceder al portfolio digital desde aquí:
 
 ## 🌍 Portfolio
 
@@ -14,8 +15,6 @@ El objetivo de este portfolio es servir como un punto central desde el que conoc
 
 ---
 
-Este portfolio está en constante evolución, por lo que irá creciendo con nuevos proyectos y mejoras conforme continúe aprendiendo.
+Espero que disfrutes explorando los proyectos tanto como yo he disfrutado desarrollándolos.
 
-## 👨‍💻 Autor
-
-**Áyax López**
+## 👨‍💻 Ayax López
