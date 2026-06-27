@@ -3,9 +3,9 @@
 ![Visitas](https://komarev.com/ghpvc/?username=Ayaxlc&label=Visitas&color=brightgreen&style=flat)
 
 
-Este es el lugar donde voy reuniendo los proyectos en los que trabajo. Algunos nacen para aprender una tecnología nueva, otros para poner a prueba ideas o profundizar en conceptos que me resultan interesantes.
+Este es el lugar donde voy reuniendo los proyectos en los que trabajo. Algunos surgen para aprender algo nuevo, otros para poner a prueba ideas o simplemente por el reto de construir algo desde cero.
 
-Más que mostrar un resultado final, este portfolio refleja mi evolución como desarrollador. Cada proyecto representa un paso más en ese camino y me ayuda a seguir aprendiendo, mejorando y afrontando nuevos retos.
+Este portfolio no solo muestra el resultado de cada proyecto, sino también el camino que he recorrido para llegar hasta él. Cada uno representa un nuevo reto y una oportunidad para seguir aprendiendo.
 
 Si te apetece echar un vistazo, puedes acceder al portfolio digital desde aquí:
 
