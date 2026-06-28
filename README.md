@@ -16,7 +16,6 @@ Si te apetece echar un vistazo, puedes acceder al portfolio digital desde aquí:
 - 📊 **Service Monitor** → [Ver repositorio](https://github.com/ayaxlc/service-monitor)
 - 🦷 **DavanteDent** → [Ver repositorio](https://github.com/ayaxlc/DavanteDent)
 - 🛒 **FreshMarket** → [Ver repositorio](https://github.com/ayaxlc/FreshMarket)
-- 👟 **StepUpStore** → [Ver repositorio](https://github.com/ayaxlc/stepupstore)
 
 ---
 
