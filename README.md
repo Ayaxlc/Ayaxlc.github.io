@@ -2,7 +2,7 @@
 
 ![Visitas](https://komarev.com/ghpvc/?username=ayaxlc&label=Visitas&color=brightgreen)
 
-Este es el lugar donde voy reuniendo los proyectos en los que trabajo. Algunos surgen para aprender algo nuevo, otros para poner a prueba ideas o simplemente por el reto de construir algo desde cero.
+Este es mi repositorio principal, el lugar donde voy reuniendo los proyectos en los que trabajo. Algunos surgen para aprender algo nuevo, otros para poner a prueba ideas o simplemente por el reto de construir algo desde cero.
 
 Este portfolio no solo muestra el resultado de cada proyecto, sino también el camino que he recorrido para llegar hasta él. Cada uno representa un nuevo reto y una oportunidad para seguir aprendiendo.
 
